@@ -1,8 +1,80 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169, 14pt]{beamer}
+
+\title{Using Pseudo-Random Number Repeatably in a Fine-Grain Multithreaded Simulation}
+\author{Dmitry Savin}
+\date{\today}
 
 \usepackage[utf8]{inputenc}
 \usepackage{default}
 
-\begin{document}
+\setbeamersize{text margin left=0pt,text margin right=0pt}
 
+\begin{document}
+\begin{large}
+
+ \frame{\titlepage}
+
+ \begin{frame}{About myself}
+  \begin{itemize}
+   \item PhD student at Dukhov Research Institute of Automatics
+   \item Work on Geant4-based neutron transport simulation
+   \item Graduated Moscow Institute of Physics and Technology
+   \item Language of choice: C++
+  \end{itemize}
+ \end{frame}
+
+ \begin{frame}{Motivation}
+ \large
+  \begin{itemize}
+   \item Monte Carlo simulation is a key tool in High Energy Physics
+   \item MC depends on Pseudo-Random Number Generators
+   \item Half of LHC computing time is used for Geant4 simulation
+   \item PRNGs take 1-5\% of CPU time in LHC simulations
+    \begin{itemize}
+     \item up to 10\% in neutron transport simulation 
+    \end{itemize}
+   \item Reproducibility from any point of simulation is needed
+  \end{itemize}
+ \end{frame}
+ 
+  \begin{frame}{Motivation}
+  \large
+  \begin{itemize}
+   \item Geant4 uses event-level parallelism
+   \begin{itemize}
+     \item Each event is simulated independently
+     \item Independent PRNGs in a small fixed number of threads
+    \end{itemize}
+   \item GeantV uses track-level parallelism
+    \begin{itemize}
+     \item Similar tracks are collected in "baskets"
+     \item Baskets are processed in parallel to utilize vectorisation
+     \item A big number of tracks is needed to reduce overhead
+     \item Number of tracks, baskets and threads changes during the simulation
+    \end{itemize}
+
+  \end{itemize}
+
+ \end{frame}
+
+ 
+ \begin{frame}{Solution}
+  \begin{itemize}
+   \item "Pedigrees" to assure reproducibility
+    \begin{itemize}
+     \item Each particle track holds the generator state
+     \item The state depends on the parent track
+     \item The state is independent from the processing thread
+    \end{itemize}
+   \item Counter-based PRNG for lightweight seeding
+    \begin{itemize}
+     \item The state is one or several integers without additional constraints
+     \item Simple transition function (increment) allows to fast-forward
+     \item The randomness is guaranteed by the output function (block cipher)
+    \end{itemize}
+  \end{itemize}
+
+ \end{frame}
+ 
+ \end{large}
 \end{document}
