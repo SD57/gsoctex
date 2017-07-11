@@ -1,4 +1,12 @@
 \documentclass[aspectratio=169, 14pt]{beamer}
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
 
 \title{Using Pseudo-Random Number Repeatably in a Fine-Grain Multithreaded Simulation}
 \subtitle{Second coding period: track-based reseeding of HepRandomEngine during simulation}
@@ -14,7 +22,64 @@
 
  \frame{\titlepage}
 
+ \begin{frame}{G4Track}
+  Added a field fHash to hold the hash to be used to set the generator.
+  Chose int64\_t because:
+  \begin{itemize}
+   \item usually the same as G4long accepted as a seed by G4Random,
+   \item standard fixed width - more predictable than (G4)long,
+   \item small overhead,
+   \item may be cast to intptr\_t to point to states for special engines.
+  \end{itemize}
+ \end{frame}
 
+ \begin{frame}{G4TrackingManager}
+  Added a flag fRngType to control if the hash values are used of enum type
+  RngType with meaningful names:
+  \begin{itemize}
+   \item fDefault - unmodified geant4 behavior,
+   \item fGeneric - setting the generators via base interface,
+   \item fSpecial - setting generator using the imlementation details\\
+    (if unimplemented switches to fGeneric).
+  \end{itemize}
+ \end{frame}
 
+ \begin{frame}{G4TrackingMessenger}
+  Added a G4UIcmdWithAString RNGCmd.\\
+  It adds macro command "/tracking/rng" accepting one of three values:
+  "default", "generic", "special" - 
+  that naturally map to the G4TrackingManager flags.\\
+  It is avaliable at the idle state of Geant4.
+ \end{frame}
+
+ \begin{frame}{G4TrackingManager::ProcessOneTrack}
+  It is the natural place to introduce track dependent changes,
+  because it is the topmost function that takes a single track.\\
+  If the reseeding is activated:
+  \begin{itemize}
+   \item For the primary particle the hash is set by concatenating two int values from the RNG;
+   \item Before tracking the hash is used as a seed for the RNG;
+   \item After the tracking the hashes of the secondary particles are set
+    by hasing the parent hash with the order in which they were created,
+    which is detemined by the hash used as the seed.
+  \end{itemize}
+ \end{frame}
+ 
+  
+ \begin{frame}{Hashing function}
+  Currently std::hash is used as the hashing function.\\
+  To hash several values in one hash\_combine from boost is used.
+  
+%   template <class T> inline void hash_combine(std::size_t& seed, T const& v)
+%   {
+%     seed ^= std::hash<T>()(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+%   }
+  
+  Its weakness should be compenstated by the RNG state transition function,
+  but a check is needed.
+ \end{frame}
+ 
+ 
+ 
  \end{large}
 \end{document}
