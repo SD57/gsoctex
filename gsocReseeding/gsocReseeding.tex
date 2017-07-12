@@ -75,10 +75,44 @@
 %     seed ^= std::hash<T>()(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
 %   }
   
-  Its weakness should be compenstated by the RNG state transition function,
-  but a check is needed.
+  Its weakness should be compenstated by the RNG seeding function,
+  but a check is needed, or a stronger hash.
  \end{frame}
  
+ \begin{frame}{Test}
+  The test is based on example B2b.\\\ \\
+  A Stacking Action is added that can place a track to the waiting stack with $\frac{1}{2}$ probability.
+  The behavior is controlled by a messenger.\\\ \\
+  
+  The output of the program is a histogram [of number of particles in each generation], which is saved in ROOT format.
+ \end{frame} 
+
+ \begin{frame}{Test macro}
+  The test macro runs the simulation
+  \begin{itemize}
+   \item with several initial seeds,
+   \item with default and random stacking order,
+   \item with default and hash-based generator seeding
+  \end{itemize}
+  in all combinations.\\
+  For each combination one hundred 1 GeV electrons are simulated.
+ \end{frame} 
+ 
+ \begin{frame}{Test post-processing}
+  The resulting histograms are processed by a ROOT macro.\\
+  The macro uses TH1::Chi2Test to calculate p-value for pairs of histograms
+  from runs with the same seed or the same stacking and seeding.\\
+  The p-value for equal histograms is 1, for different - less than 1.
+ \end{frame}
+ 
+ \begin{frame}{Test post-processing results}
+  p-value for runs with default setting and the same seeds is, with different seeds $<$ 1
+  $\Rightarrow$ the test is sensitive to the random number generation.\\\ \\
+  p-value for runs with default seeding and different stacking $<$ 1
+  $\Rightarrow$ the test is sensitive to different stacking.\\\ \\
+  p-value for runs with hash-based seeding and different stacking is 1
+  $\Rightarrow$ hash-based seeding gives results independent from track processing order.
+ \end{frame}
  
  
  \end{large}
