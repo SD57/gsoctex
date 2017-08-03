@@ -17,6 +17,8 @@
 
 \setbeamersize{text margin left=0pt,text margin right=0pt}
 
+\newcommand{\MD}{Merkle-Damg\r{a}rd}
+
 \begin{document}
 \begin{large}
 
@@ -115,8 +117,22 @@
  \end{frame}
  
  \begin{frame}{Hashing algorithm}
+  Pedigree can be represented as a sequence of $\{i_1,\ i_2,\ ...\ ,\ i_n\}$,
+  where ${i_n}$ is the number of the track among the secondary tracks of its parent.\\  
+  When the hashed pedigree is calculated only the already hashed pedigree of the parent track is available,
+  so the natural hashing algorithm is the \MD\ construction.\\  
+  A collision of the \MD\ hash function means a collision the compression function.
+ \end{frame}
+
+ \begin{frame}{Hashing algorithm}
   \scalebox{.5}{\input{damgard}}
  \end{frame}
  
- \end{large}
+ \begin{frame}{Hashing algorithm}
+  The initialization vector is obtained from the random generator at the beginning of the event.\\  
+  The compression function is std::hash of the secondary number followed by hash\_combine from boost.\\  
+  The collision probability is estimated to be $2^{-64}$.
+ \end{frame}
+ 
+\end{large}
 \end{document}
