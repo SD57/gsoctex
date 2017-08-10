@@ -15,5 +15,20 @@
 \newcommand{\MD}{Merkle-Damg\r{a}rd}
 
 \begin{document}
-
+ \maketitle
+ 
+ \abstract
+  Because of the transition from event-level parallelism in Geant4 to dynamical multithreading in GeantV the order in which tracks are processed becomes non-determenistic.
+  Thus to maintain reproducibility one needs to associate the random generator state with the track itself and the worker thread currently processing the track.
+  To be reproducible from the beginning of the event, this state can only depend on the pedigree of the track.
+  To reduce overhead the pedigree is stored in a hashed form, which is sufficient because the reverse reconstruction is unneeded.
+  Calculation of the hashed pedigree of a track using the hashed pedigree of the parent track makes the hashing algorithm a \MD\ construct with well-studied properties.
+  
+  We implement this construction using a 64-bit hash and standard hash with boost\_combine as the compression function operating on the number of the track among siblings as the input message blocks.
+  We use the hashed pedigree as the seed for a CLHEP random number engine at the beginning of processing of each track in a Geant4 simulation.
+  We show the reproducibility of the results under different track stacking order and their agrement with the results with the default random number generation.
+  We show that the performance overhead is negligible for most of the random number generators except for those that have a big internal state.
+  
+ 
+ 
 \end{document}
