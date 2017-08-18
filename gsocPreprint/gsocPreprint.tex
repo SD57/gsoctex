@@ -1,6 +1,7 @@
 \documentclass[a4paper, titlepage, 12pt]{article} % a4 is 210mm x 297mm
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{tikz}
 \usepackage{xcolor}
 \lstset { %
     language=C++
@@ -113,8 +114,16 @@
  %   Both reseeding at user and toolkit level 
    The full test results are presented in Appendix~\ref{TESTRESULTS}.
   \subsubsection{Physical results}
+  \begin{figure}
+   \scalebox{.8}{\input{graphiteGamma}}
+   \caption{Neutron induced gamma spectrum from a graphite sample with different random engines.}
+  \end{figure}
   
   \subsubsection{Performance}
+  \begin{figure}
+   \scalebox{.8}{\input{mean}}
+   \caption{User run time with (Y axis) and without (X axis) reseeding.}
+  \end{figure}
  
  
  \section{Conclusion}
