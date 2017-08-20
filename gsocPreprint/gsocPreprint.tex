@@ -114,13 +114,22 @@
  %   Both reseeding at user and toolkit level 
    The full test results are presented in Appendix~\ref{TESTRESULTS}.
   \subsubsection{Physical results}
-  \begin{figure}
-   \scalebox{.8}{\input{graphiteGamma}}
-   \caption{Neutron induced gamma spectrum from a graphite sample with different random engines.}
-  \end{figure}
+   \begin{figure}
+    \label{GAMMASPECTRUM}
+    \scalebox{.8}{\input{graphiteGamma}}
+    \caption{Neutron induced gamma spectrum from a graphite sample with different random engines.}
+   \end{figure}
+   To assess the physical results we compare the output of Hadr06 standard example with different random number generators.
+   The macro used was derived from graphite.mac by multiplying the statistics by ten.
+   Figure~\ref{GAMMASPECTRUM} shows the spectrum of gamma rays emitted from a graphite sample.
+   The most intensive line at 4.4 MeV corresponds to the first excited level of $^{12}C$.
+   The p-values for pairs of histograms produced with different engines are in the range $0.1 - 0.9$.
+   It indicates that the results with different generators are in general agreement, including the new counter-based ones.
+   For full results see Appendix~\ref{TESTRESULTS}.
   
   \subsubsection{Performance}
   \begin{figure}
+   \label{USERTIME}
    \scalebox{.8}{\input{mean}}
    \caption{User run time with (Y axis) and without (X axis) reseeding.}
   \end{figure}
@@ -141,6 +150,41 @@
   
   \section{Test results}
    \label{TESTRESULTS}
+   \subsection{Reproducibility}
+   
+   \subsection{Physical results}
+
+    Debug build:\\
+    \begin{tabular}{ l c c c c r }
+     1 & 0.22 & 0.83 & 0.79 & 0.12 & 0.57 \\
+     0.22 & 1 & 0.19 & 0.42 & 0.89 & 0.8 \\
+     0.83 & 0.19 & 1 & 0.68 & 0.5 & 0.79 \\
+     0.79 & 0.42 & 0.68 & 1 & 0.29 & 0.79 \\
+     0.12 & 0.89 & 0.5 & 0.29 & 1 & 0.76 \\
+     0.57 & 0.8 & 0.79 & 0.79 & 0.76 & 1 \\
+    \end{tabular}
+   
+    Release build with 10x statistics:\\
+    \begin{tabular}{ l c c c c r }
+     1 & 0.44 & 0.07 & 0.39 & 0.12 & 0.5 \\
+     0.44 & 1 & 0.52 & 0.97 & 0.79 & 0.93 \\
+     0.07 & 0.52 & 1 & 0.33 & 0.2 & 0.56 \\
+     0.39 & 0.97 & 0.33 & 1 & 0.85 & 0.83 \\
+     0.12 & 0.79 & 0.2 & 0.85 & 1 & 0.42 \\
+     0.5 & 0.93 & 0.56 & 0.83 & 0.42 & 1 \\
+    \end{tabular}
+    
+    With reseeding activated:\\
+    \begin{tabular}{ l c c c c r }
+     1 & 0.91 & 0.6 & 0.33 & 0.26 & 0.35 \\
+     0.91 & 1 & 0.02 & 0.85 & 0.82 & 0.5 \\
+     0.6 & 0.02 & 1 & 0.1 & 0.26 & 0.76 \\
+     0.33 & 0.85 & 0.1 & 1 & 0.84 & 0.57 \\
+     0.26 & 0.82 & 0.26 & 0.84 & 1 & 0.68 \\
+     0.35 & 0.5 & 0.76 & 0.57 & 0.68 & 1 \\
+    \end{tabular}
+    
+   \subsection{Performance}
   
 % hadr06 p-values  
 \end{document}
