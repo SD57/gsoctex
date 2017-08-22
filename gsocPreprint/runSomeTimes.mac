@@ -1,0 +1,32 @@
+#run several times to check variability
+
+/run/printProgress 10
+
+/random/setSeeds 0 0
+/run/beamOn 100
+
+/random/setSeeds 0 0
+/run/beamOn 100
+
+/random/setSeeds 8989 1234567
+/run/beamOn 100
+
+/random/setSeeds 9876 12345
+/run/beamOn 100
+
+/random/setSeeds 98079843 2134512
+/run/beamOn 100
+
+/random/setSeeds 98079843 2134512
+/run/beamOn 100
+
+/random/setSeeds 13417512123 231111457008
+/run/beamOn 100
+
+/random/setSeeds 13417512123 231111457008
+/run/beamOn 100
+
+/random/setSeeds 13417512123 231111457008
+/run/beamOn 100
+
+

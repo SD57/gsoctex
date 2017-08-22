@@ -1,0 +1,53 @@
+# Macro file for the modified example B2b
+# 
+# To be run preferably in batch, without graphics:
+# % exampleB2b runTr.mac
+#
+# Runs the example with different stacking and seeding options
+# to demonstrate the result independence of the tracking order
+# if track hash based seeding is used.
+# The executed runSomeTimes.mac runs simulation with different initial seeds
+# to validate the test and to avoid initial condition dependence.
+
+/tracking/verbose 0
+
+
+/run/numberOfThreads 1
+/B2/run/setGenHistLimit 30
+/run/initialize
+
+/gun/particle e-
+/gun/energy 1 GeV
+
+/hits/verbose 0
+/globalField/verbose 0
+/event/verbose 0
+/run/verbose 1
+
+# default mode, used in geant4 as of version 10.04 beta
+/tracking/rng default
+/B2/stack/setStackingType default
+/B2/track/restoreTrackSeeds false
+/control/execute runSomeTimes.mac
+
+# leaves seeding the same but shuffles the tracking order
+# to make sure it works, the result should be irreproducible
+/tracking/rng default
+/B2/stack/setStackingType random
+/B2/track/restoreTrackSeeds false
+/control/execute runSomeTimes.mac
+
+# activates toolkit-level seed hashing does not shuffle tracks
+# the results are reproducible
+/tracking/rng generic
+/B2/stack/setStackingType default
+/B2/track/restoreTrackSeeds false
+/control/execute runSomeTimes.mac
+
+# activates toolkit-level seed hashing does not shuffle tracks
+# the results are reproducible and the same as without shuffling
+/tracking/rng generic
+/B2/stack/setStackingType random
+/B2/track/restoreTrackSeeds false
+/control/execute runSomeTimes.mac
+

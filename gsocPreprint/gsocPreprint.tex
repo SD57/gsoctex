@@ -1,12 +1,28 @@
 \documentclass[a4paper, titlepage, 12pt]{article} % a4 is 210mm x 297mm
+\usepackage[dvipsnames]{xcolor}
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usepackage{xcolor}
+\usepackage{fancyvrb}
 \lstset { %
     language=C++
 }
 
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+ %
+%  label=\fbox{\color{Black}data.txt},
+ labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
 
 \title{Using Pseudo-Random Number Repeatably in a Fine-Grain Multithreaded Simulation}
 \author{Dmitry Savin}
@@ -147,6 +163,10 @@
  \appendix
   \section{Test macros}
    \label{TESTMACROS}
+   
+   \VerbatimInput{runTr.mac}
+   
+   \VerbatimInput{runSomeTimes.mac}
   
   \section{Test results}
    \label{TESTRESULTS}
