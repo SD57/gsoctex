@@ -1,0 +1,61 @@
+\documentclass[a4paper, 12pt]{article} % a4 is 210mm x 297mm
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fancyvrb}
+\lstset { %
+    language=C++
+}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+ %
+%  label=\fbox{\color{Black}data.txt},
+ labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+
+\title{Using Pseudo-Random Numbers Repeatably in a Fine-Grain Multithreaded Simulation}
+\author{Dmitry Savin}
+\date{\today}
+
+\usepackage[utf8]{inputenc}
+
+\newcommand{\MD}{Merkle-Damg\r{a}rd}
+
+\begin{document}
+ \maketitle
+
+ \section*{Motivation}
+ 
+ \section*{Goals}
+  
+ \section*{Implementation}
+ 
+  \subsection*{Standalone prototype}
+ 
+  \subsection*{Geant4-based prototype}
+  
+ \section*{Tests and benchmarks}
+ 
+ \section*{Conclusion}
+ 
+ \section*{Acknowledgements}
+  Development sponsored by Google in Google Summer of Code 2017 under supervision of John Apostolakis and Sandro Wenzel.
+ 
+ \section*{Links}
+ 
+%  \newpage
+%  \bibliographystyle{plain}
+%  \bibliography{gsocReport}
+ 
+\end{document}
