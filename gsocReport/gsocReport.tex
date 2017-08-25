@@ -46,8 +46,20 @@
   Because of the transition from event-level parallelism in Geant4 to dynamical multithreading in GeantV, the tracks in one event or even parts of the same track are processed by different threads.
   Thus to assure reproducibility the pseudo-random engine state must be associated with the track itself;
   and the state of the secondary track has to be a deterministic function of the parent track.
+  The state can be initialized by seeding the generator with the hashed pedigree of the track.
   
  \section*{ Goals }
+ 
+  \begin{itemize}
+   \item Implement a standalone prototype to demonstrate deterministic random number generation independent of invocation order.
+   \item Associate additional PRNG information with tracks in Geant4 for reproducible simulation.
+   \item Add generators with substreaming capability.
+   \item Test reproducibility with different track processing order.
+   \item Profile the overhead of setting the generator state.
+   \item Benchmark the new generators.
+  \end{itemize}
+  
+
   
  \section*{ Implementation }
  
