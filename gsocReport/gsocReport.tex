@@ -36,7 +36,13 @@
  \maketitle
 
  \section*{Motivation}
- 
+  Particle transport Monte Carlo simulations are a key tool for High Energy Physics experiments, including the LHC experiments at CERN.
+  All Monte Carlo (MC) simulations depend vitally on Pseudo-Random Number Generators (PRNGs) used to sample many distributions.
+  PRNGs used must possess very large periods, fast execution, the ability to create a large number of streams, and very good correlation properties between streams and sampled values. It must be possible to reproduce a simulated event any time, for reexamination or debugging.
+
+  Because of the transition from event-level parallelism in Geant4 to dynamical multithreading in GeantV, the tracks in one event or even parts of the same track are processed by different threads.
+  Thus to assure reproducibility the pseudo-random engine state must be associated with the track itself;
+  and the state of the secondary track has to be a deterministic function of the parent track.
  \section*{Goals}
   
  \section*{Implementation}
