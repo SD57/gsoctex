@@ -4,6 +4,10 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{fancyvrb}
+\usepackage{ifpdf}
+\ifpdf
+ \usetikzlibrary{patterns}
+\fi
 \lstset { %
     language=C++
 }
