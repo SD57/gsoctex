@@ -72,19 +72,30 @@
 
    \subsection*{ Geant4-based prototype }
    
+  \begin{figure}
+   \scalebox{.5}{\input{damgard}}
+   \label{MD}
+   \caption{Pedigree hash calculation and usage in the Geant4-based prototype.}
+  \end{figure}
   A supplementary 64-bit state was added to G4Track.
   The stored number represents the hashed pedigree of the track.
   The hashed pedigree is used to seed the random number generator at the beginning of processing each track.
   The hash is a \href{https://en.wikipedia.org/wiki/Merkle\%E2\%80\%93Damg\%C3\%A5rd\_construction}\MD\ construction with standard hash followed by boost\_combine used as the compression function and a random number as the initialization vector.
-  \begin{figure}
-   \scalebox{.5}{\input{damgard}}
-   \caption{Pedigree hash calculation and usage in the Geant4-based prototype.}
-  \end{figure}
   To toggle the random number generation behavior at runtime a Geant4 macro command was added.
   For testing the p-values for pairs of histograms obtained with different track processing order were calculated.
   
  \section*{ Benchmarks }
- 
+  \begin{figure}
+   \scalebox{.8}{\input{mean}}
+   \label{USERTIME}
+   \caption{User run time with (Y axis) and without (X axis) reseeding.}
+  \end{figure}
+  
+  Figure~\ref{USERTIME} shows run times of a standard geant4 example with the standard random number generation and with reseeding based on pedigrees for different random number generators.
+  The overhead depends on the complexity of the seeding function of the random number generator.
+  It is the small for the new counter-based generators,
+  because the complexity is shifted to the output function.
+    
  \section*{ Conclusion }
  
  \section*{ Acknowledgements }
