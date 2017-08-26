@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{fancyvrb}
+\usepackage{hyperref}
 \usepackage{sectsty}
 \lstset { %
     language=C++
@@ -59,15 +60,30 @@
    \item Benchmark the new generators.
   \end{itemize}
   
-
-  
  \section*{ Implementation }
  
   \subsection*{ Standalone prototype }
- 
-  \subsection*{ Geant4-based prototype }
+   The standalone prototype was implemented in accordance with the \href{https://sd57.github.io/g4dprng/gsoc-proposal-Savin.html}{proposal}.
+   There is an implementation compatible with any HepRandomEngine from the CLHEP library included in geant4
+   and a specific version for Philox and Threefry generators from
+   \href{https://www.deshawresearch.com/resources_random123.html}{Random123} library
+   to reduce the abstraction overhead.
+   There is a unit test for each implementation that traverses the tree in width-first and depth-first order and checks the equality of outcome.
+
+   \subsection*{ Geant4-based prototype }
+   
+  A supplementary 64-bit state was added to G4Track.
+  The stored number represents the hashed pedigree of the track.
+  The hashed pedigree is used to seed the random number generator at the beginning of processing each track.
+  The hash is a \href{https://en.wikipedia.org/wiki/Merkle\%E2\%80\%93Damg\%C3\%A5rd\_construction}\MD\ construction with standard hash followed by boost\_combine used as the compression function and a random number as the initialization vector.
+  \begin{figure}
+   \scalebox{.5}{\input{damgard}}
+   \caption{Pedigree hash calculation and usage in the Geant4-based prototype.}
+  \end{figure}
+  To toggle the random number generation behavior at runtime a Geant4 macro command was added.
+  For testing the p-values for pairs of histograms obtained with different track processing order were calculated.
   
- \section*{ Tests and benchmarks }
+ \section*{ Benchmarks }
  
  \section*{ Conclusion }
  
@@ -76,6 +92,11 @@
  
  \section*{ Links }
  
+  \href{https://bitbucket.org/sd57/pedigree-git}{Standalone prototype}\\
+  \href{https://bitbucket.org/sd57/geant4/branch/pedigree}{Geant4-based prototype}\\
+  \href{https://sd57.github.io/g4dprng/gsocPreprint.html}{Preprint} about the Geant4-based prototype\\
+  \href{https://sd57.github.io/g4dprng/gsoc-proposal-Savin.html}{GSoC proposal}\\
+  
 %  \newpage
 %  \bibliographystyle{plain}
 %  \bibliography{gsocReport}
