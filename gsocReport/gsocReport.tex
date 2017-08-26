@@ -98,7 +98,15 @@
     
  \section*{ Conclusion }
  
+  We implemented reproducible pseudo-random number generation in a Geant4-based prototype.
+  We showed the reproducibility of the results independent of the track processing order.
+  Also we profiled the overhead for different random number engines.
+  We showed that it is rather low for appropriate random number engines.
+  
+  Therefore it is worth to apply a similar algorithm for reproducible pseudo-random number generation in multithreaded GeantV simulations.
+ 
  \section*{ Acknowledgements }
+ 
   Development sponsored by Google in Google Summer of Code 2017 under supervision of John Apostolakis and Sandro Wenzel.
  
  \section*{ Links }
