@@ -1,3 +1,4 @@
+#runSomeTimes.mac
 #run several times to check variability
 
 /run/printProgress 10

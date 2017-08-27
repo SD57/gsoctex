@@ -56,15 +56,15 @@
  \newpage
   
  \section{Introduction}
-  \subsection{Monte Carlo simulation}
-  \subsection{Geant4}
-   Geant4~\cite{AGOSTINELLI2003250, 1610988, ALLISON2016186} is a toolkit for the simulation of the passage of particles through matter.
+%   \subsection{Monte Carlo simulation}
+%   \subsection{Geant4}
+%    Geant4~\cite{AGOSTINELLI2003250, 1610988, ALLISON2016186} is a toolkit for the simulation of the passage of particles through matter.
+%    
+%    
+%    \cite{GEANT4-MT}
+%    Each thread has an instance of random number generator engine.
    
-   
-   \cite{GEANT4-MT}
-   Each thread has an instance of random number generator engine.
-   
-  \subsection{GeantV}
+  \subsection{Fine-grained parallelism and multi-threading}
    GeantV~\cite{1742-6596-523-1-012004} is a project aimed at increasing the performance of HEP simulations.
    It is achieved by utilizing massive parallelism of modern hardware and accelerators, such as GPGPUs and Intel Xeon Phi coprocessors.
    While different threads may operate independently, to make use of vectorization within thread one must have data layout suitable for SIMD (Single Instruction Multiple Data) operations.
@@ -148,14 +148,28 @@
    For full results see Appendix~\ref{TESTRESULTS}.
   
   \subsubsection{Performance}
-  \begin{figure}
-   \label{USERTIME}
+  
+    \begin{figure}
    \scalebox{.8}{\input{mean}}
+   \label{USERTIME}
    \caption{User run time with (Y axis) and without (X axis) reseeding.}
   \end{figure}
- 
+  
+  Figure~\ref{USERTIME} shows run times of a standard geant4 example with the standard random number generation and with reseeding based on pedigrees for different random number generators.
+  To calculate the mean values and standard deviation the example was run 16 times with each generator.
+  Times for each run are presented in Appendix~\ref{USERTIME}.
+  The overhead depends on the complexity of the seeding function of the random number generator.
+  It is the small for the new counter-based generators,
+  because the complexity is shifted to the output function.
  
  \section{Conclusion}
+ 
+   We implemented reproducible pseudo-random number generation in a Geant4-based prototype.
+  We showed the reproducibility of the results independent of the track processing order.
+  Also we profiled the overhead for different random number engines.
+  We showed that it is rather low for appropriate random number engines.
+  
+  Therefore it is worth to apply a similar algorithm for reproducible pseudo-random number generation in multithreaded GeantV simulations.
  
  \section{Acknowledgements}
   Development sponsored by Google in Google Summer of Code 2017 under supervision of John Apostolakis and Sandro Wenzel.
@@ -180,36 +194,38 @@
    
    \subsection{Physical results}
 
-    Debug build:\\
-    \begin{tabular}{ l c c c c r }
-     1 & 0.22 & 0.83 & 0.79 & 0.12 & 0.57 \\
-     0.22 & 1 & 0.19 & 0.42 & 0.89 & 0.8 \\
-     0.83 & 0.19 & 1 & 0.68 & 0.5 & 0.79 \\
-     0.79 & 0.42 & 0.68 & 1 & 0.29 & 0.79 \\
-     0.12 & 0.89 & 0.5 & 0.29 & 1 & 0.76 \\
-     0.57 & 0.8 & 0.79 & 0.79 & 0.76 & 1 \\
-    \end{tabular}
-   
-    Release build with 10x statistics:\\
-    \begin{tabular}{ l c c c c r }
-     1 & 0.44 & 0.07 & 0.39 & 0.12 & 0.5 \\
-     0.44 & 1 & 0.52 & 0.97 & 0.79 & 0.93 \\
-     0.07 & 0.52 & 1 & 0.33 & 0.2 & 0.56 \\
-     0.39 & 0.97 & 0.33 & 1 & 0.85 & 0.83 \\
-     0.12 & 0.79 & 0.2 & 0.85 & 1 & 0.42 \\
-     0.5 & 0.93 & 0.56 & 0.83 & 0.42 & 1 \\
-    \end{tabular}
-    
-    With reseeding activated:\\
-    \begin{tabular}{ l c c c c r }
-     1 & 0.91 & 0.6 & 0.33 & 0.26 & 0.35 \\
-     0.91 & 1 & 0.02 & 0.85 & 0.82 & 0.5 \\
-     0.6 & 0.02 & 1 & 0.1 & 0.26 & 0.76 \\
-     0.33 & 0.85 & 0.1 & 1 & 0.84 & 0.57 \\
-     0.26 & 0.82 & 0.26 & 0.84 & 1 & 0.68 \\
-     0.35 & 0.5 & 0.76 & 0.57 & 0.68 & 1 \\
-    \end{tabular}
-    
+    P-values for gamma spectra histograms with different generators:
+    \begin{itemize}
+     \item Debug build:\\      
+      \begin{tabular}{ l c c c c r }
+       1 & 0.22 & 0.83 & 0.79 & 0.12 & 0.57 \\
+       0.22 & 1 & 0.19 & 0.42 & 0.89 & 0.8 \\
+       0.83 & 0.19 & 1 & 0.68 & 0.5 & 0.79 \\
+       0.79 & 0.42 & 0.68 & 1 & 0.29 & 0.79 \\
+       0.12 & 0.89 & 0.5 & 0.29 & 1 & 0.76 \\
+       0.57 & 0.8 & 0.79 & 0.79 & 0.76 & 1 \\
+      \end{tabular}
+     
+      \item Release build with 10x statistics:\\
+       \begin{tabular}{ l c c c c r }
+	1 & 0.44 & 0.07 & 0.39 & 0.12 & 0.5 \\
+	0.44 & 1 & 0.52 & 0.97 & 0.79 & 0.93 \\
+	0.07 & 0.52 & 1 & 0.33 & 0.2 & 0.56 \\
+	0.39 & 0.97 & 0.33 & 1 & 0.85 & 0.83 \\
+	0.12 & 0.79 & 0.2 & 0.85 & 1 & 0.42 \\
+	0.5 & 0.93 & 0.56 & 0.83 & 0.42 & 1 \\
+       \end{tabular}
+      
+      \item With reseeding activated:\\
+       \begin{tabular}{ l c c c c r }
+	1 & 0.91 & 0.6 & 0.33 & 0.26 & 0.35 \\
+	0.91 & 1 & 0.02 & 0.85 & 0.82 & 0.5 \\
+	0.6 & 0.02 & 1 & 0.1 & 0.26 & 0.76 \\
+	0.33 & 0.85 & 0.1 & 1 & 0.84 & 0.57 \\
+	0.26 & 0.82 & 0.26 & 0.84 & 1 & 0.68 \\
+	0.35 & 0.5 & 0.76 & 0.57 & 0.68 & 1 \\
+       \end{tabular}
+    \end{itemize}
    \subsection{Performance}
     
     \scalebox{.8}{\input{mersenne-plain}}

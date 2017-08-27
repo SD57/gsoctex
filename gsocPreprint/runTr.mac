@@ -1,4 +1,4 @@
-# Macro file for the modified example B2b
+# Macro file runTr.mac for the modified example B2b
 # 
 # To be run preferably in batch, without graphics:
 # % exampleB2b runTr.mac
