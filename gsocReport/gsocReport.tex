@@ -42,12 +42,16 @@
  \section*{ Motivation }
   Particle transport Monte Carlo simulations are a key tool for High Energy Physics experiments, including the LHC experiments at CERN.
   All Monte Carlo (MC) simulations depend vitally on Pseudo-Random Number Generators (PRNGs) used to sample many distributions.
-  PRNGs used must possess very large periods, fast execution, the ability to create a large number of streams, and very good correlation properties between streams and sampled values. It must be possible to reproduce a simulated event any time, for reexamination or debugging.
+  PRNGs used must possess very large periods, fast execution, the ability to create a large number of streams, and very good correlation properties between streams and sampled values.
+  One of the key requirements for simulation is that it must be possible to reproduce a simulated event any time, for reexamination or debugging.
 
+  In Geant the history of the passage of a particle through matter forms a track.
+  Each track is divided in steps defined by scatterings, geometry boundaries or user limits.
   Because of the transition from event-level parallelism in Geant4 to dynamical multithreading in GeantV, the tracks in one event or even parts of the same track are processed by different threads.
   Thus to assure reproducibility the pseudo-random engine state must be associated with the track itself;
   and the state of the secondary track has to be a deterministic function of the parent track.
-  The state can be initialized by seeding the generator with the hashed pedigree of the track.
+  The sequence of the number of older siblings of each ancestor of a track uniquely represents its pedigree.
+  The hashed pedigree of the track can be used to initialize the state of the random number generator.
   
  \section*{ Goals }
  
@@ -93,17 +97,15 @@
   
   Figure~\ref{USERTIME} shows run times of a standard geant4 example with the standard random number generation and with reseeding based on pedigrees for different random number generators.
   The overhead depends on the complexity of the seeding function of the random number generator.
-  It is the small for the new counter-based generators,
+  It is small for the new counter-based generators,
   because the complexity is shifted to the output function.
     
  \section*{ Conclusion }
  
-  We implemented reproducible pseudo-random number generation in a Geant4-based prototype.
-  We showed the reproducibility of the results independent of the track processing order.
-  Also we profiled the overhead for different random number engines.
-  We showed that it is rather low for appropriate random number engines.
+  We implemented a Geant4 prototype who can perform fully reproducible simulations in a multithreaded environment and under the exchange of the order of track propagation.
+  We profiled the overhead to achieve this reproducability for different random number engines and showed that it is quite low for selected engines.
   
-  Therefore it is worth to apply a similar algorithm for reproducible pseudo-random number generation in multithreaded GeantV simulations.
+  Therefore it is worth to apply a similar algorithm for reproducible pseudo-random number generation in GeantV.
  
  \section*{ Acknowledgements }
  
@@ -113,7 +115,7 @@
  
   \href{https://bitbucket.org/sd57/pedigree-git}{Standalone prototype}\\
   \href{https://bitbucket.org/sd57/geant4/branch/pedigree}{Geant4-based prototype}\\
-  \href{https://sd57.github.io/g4dprng/gsocPreprint.html}{Preprint} about the Geant4-based prototype\\
+  \href{https://sd57.github.io/g4dprng/gsocPreprint.html}{Preprint} about the Geant4-based prototype (in progress)\\
   \href{https://sd57.github.io/g4dprng/gsoc-proposal-Savin.html}{GSoC proposal}\\
   
 %  \newpage
