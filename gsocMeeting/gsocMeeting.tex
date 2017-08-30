@@ -1,5 +1,6 @@
 \documentclass[aspectratio=169, 14pt]{beamer}
 \usepackage{tikz}
+\usepackage{subfig}
 \title{Using Pseudo-Random Number Repeatably in a Fine-Grain Multithreaded Simulation}
 \author{Dmitry Savin}
 \date{\today}
@@ -66,10 +67,22 @@
  
  
  \begin{frame}{Performance}
-   \begin{figure}
-   \scalebox{.4}{\input{mean}}
-   \label{USERTIME}
-  \end{figure}
+  \begin{figure}
+   \begin{subfloat}[][]
+    \centering
+    \scalebox{.33}{\input{mean}}  
+% %    \caption{Caption A}
+%     \label{fig:A}
+   \end{subfloat}
+   \begin{subfloat}[][]
+    \centering
+    \scalebox{.33}{\input{smallMean}}  
+%    \caption{Caption B}
+    \label{fig:B}
+   \end{subfloat}
+ \end{figure}
+
+
  \end{frame}
 
  
