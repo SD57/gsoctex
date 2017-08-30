@@ -1,5 +1,5 @@
 \documentclass[aspectratio=169, 14pt]{beamer}
-
+\usepackage{tikz}
 \title{Using Pseudo-Random Number Repeatably in a Fine-Grain Multithreaded Simulation}
 \author{Dmitry Savin}
 \date{\today}
@@ -17,8 +17,10 @@
  \begin{frame}{Motivation}
  \large
   \begin{itemize}
-   \item Monte Carlo simulation is a key tool in High Energy Physics
-    \item Reproducibility from any point of simulation is needed
+   \item Geant4 is a toolkit for the Monte Carlo simulation of the passage of particles through matter
+   \item Monte Carlo simulation relies on pseudo-random numbers
+   \item The numbers must seem uncorrelated
+   \item Reproducibility from any point of simulation is needed
   \end{itemize}
  \end{frame}
  
@@ -30,33 +32,44 @@
      \item Each event is simulated independently
      \item Independent PRNGs in a small fixed number of threads
     \end{itemize}
+    $\Rightarrow$ an event is defined by the generator state at the beginning\\ \ \\
    \item GeantV uses track-level parallelism
     \begin{itemize}
-     \item Similar tracks are collected in "baskets"
+     \item Similar tracks from many events are collected in "baskets"
      \item Baskets are processed in parallel to utilize vectorisation
      \item A big number of tracks is needed to reduce overhead
      \item Number of tracks, baskets and threads changes during the simulation
     \end{itemize}
-
+   $\Rightarrow$ a new mechanism is needed for reproducibility
   \end{itemize}
 
  \end{frame}
 
  
  \begin{frame}{Pedigrees}
+  \begin{itemize}
+   \item pedigree of a track can - the sequence of ranks of its ancestor tracks
+   \item the rank of a track - the number of sibling tracks created by its parent track before it
+   
 
+  \end{itemize}
+  
  
  \end{frame}
 
 
  \begin{frame}{Hash calculation}
-
- 
+  \begin{figure}
+   \scalebox{.5}{\input{damgard}}
+  \end{figure}
  \end{frame}
  
  
  \begin{frame}{Performance}
- 
+   \begin{figure}
+   \scalebox{.4}{\input{mean}}
+   \label{USERTIME}
+  \end{figure}
  \end{frame}
 
  
