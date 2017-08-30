@@ -51,15 +51,12 @@
   \begin{itemize}
    \item pedigree of a track can - the sequence of ranks of its ancestor tracks
    \item the rank of a track - the number of sibling tracks created by its parent track before it
-   
-
+   \item the hashed pedigree can be stored by the track and used to seed the generator
   \end{itemize}
-  
- 
  \end{frame}
 
 
- \begin{frame}{Hash calculation}
+ \begin{frame}{Merkle–Damgård hash calculation}
   \begin{figure}
    \scalebox{.5}{\input{damgard}}
   \end{figure}
@@ -83,6 +80,28 @@
   \end{figure}
  \end{frame}
 
+ \begin{frame}{Conclusion}
+  \begin{itemize}
+   \item Implemented a Geant4 prototype which can perform fully reproducible simulations in a multithreaded environment and under the exchange of the order of track propagation.
+   \item Profiled the overhead to achieve this reproducibility for different random number engines and showed that it is quite low for selected engines.
+  
+   \item \bf It is worth to apply a similar algorithm for reproducible pseudo-random number generation in GeantV.
+  \end{itemize}
+
+ \end{frame}
+ 
+ \begin{frame}{Acknowledgements}
+
+  \centering
+  I would like to thank my mentors\\
+  John Apostolakis and Sandro Wenzel\\
+  for productive collaboration.\\ \ \\
+  
+  I would like to thank Dmitry Sorokin\\
+  for sharing his experience from the previous GSoC.
+
+ \end{frame}
+ 
  
  \end{large}
 \end{document}
