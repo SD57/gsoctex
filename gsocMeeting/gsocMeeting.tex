@@ -1,7 +1,7 @@
 \documentclass[aspectratio=169, 14pt]{beamer}
 \usepackage{tikz}
 \usepackage{subfig}
-\title{Using Pseudo-Random Number Repeatably in a Fine-Grain Multithreaded Simulation}
+\title{Using Pseudo-Random Numbers Repeatably in a Fine-Grain Multithreaded Simulation}
 \author{Dmitry Savin}
 \date{\today}
 
@@ -39,7 +39,7 @@
      \item Similar tracks from many events are collected in "baskets"
      \item Baskets are processed in parallel to utilize vectorisation
      \item A big number of tracks is needed to reduce overhead
-     \item Number of tracks, baskets and threads changes during the simulation
+     \item Number of tracks, baskets and threads change during the simulation
     \end{itemize}
    $\Rightarrow$ a new mechanism is needed for reproducibility
   \end{itemize}
@@ -49,8 +49,8 @@
  
  \begin{frame}{Pedigrees}
   \begin{itemize}
-   \item pedigree of a track can - the sequence of ranks of its ancestor tracks
    \item the rank of a track - the number of sibling tracks created by its parent track before it
+   \item the pedigree of a track - the sequence of ranks of its ancestor tracks
    \item the hashed pedigree can be stored by the track and used to seed the generator
   \end{itemize}
  \end{frame}
@@ -80,6 +80,21 @@
   \end{figure}
  \end{frame}
 
+ \begin{frame}{Counter-Based Pseudo-Random Number Generators}
+  \begin{itemize}
+   \item CPRNG state transition function is a simple increment
+   \item The randomness is produces by the output function
+   \item Seeding is a single assignment
+   \item A cryptographic function can be used as the output function
+   \item Faster functions can be used under relaxed requirements
+   \item Random123 library provides a set of such functions
+   \item Philox1x64, Threefry1x64 were wrapped in a CLHEP interface
+   \item Vectorization may increase performance
+  \end{itemize}
+
+ \end{frame}
+ 
+ 
  \begin{frame}{Conclusion}
   \begin{itemize}
    \item Implemented a Geant4 prototype which can perform fully reproducible simulations in a multithreaded environment and under the exchange of the order of track propagation.
