@@ -1,4 +1,6 @@
 \documentclass[aspectratio=169, 14pt]{beamer}
+\usepackage[]{xcolor}
+\usepackage{multicol}
 \usepackage{tikz}
 \usepackage{subfig}
 \title{Using Pseudo-Random Numbers Repeatably in a Fine-Grain Multithreaded Simulation}
@@ -61,6 +63,52 @@ supervised by John Apostolakis and Sandro Wenzel}
    \scalebox{.5}{\input{damgard}}
   \end{figure}
  \end{frame}
+
+ \begin{frame}{Random number engines}
+   \begin{multicols}{2}
+   \begin{itemize}
+    \item Ranecu
+    \item Ranlux
+    \item Ranlux64
+    \item HepJamesRandom
+    \item Ranshi
+    \item DualRand
+    \item Mersenne Twister
+    \item MixMax
+    \item CBPRNG
+   \end{itemize}
+  \end{multicols}
+ \end{frame}
+%  
+ \begin{frame}{Counter-Based Pseudo-Random Number Generators}
+  \begin{itemize}
+   \item CPRNG state transition function is a simple increment
+   \item The randomness is produces by the output function
+   \item Seeding is a single assignment
+   \item A cryptographic function can be used as the output function
+   \item Faster functions can be used under relaxed requirements
+   \item Random123 library provides a set of such functions
+   \item Philox1x64, Threefry1x64 were wrapped in a CLHEP interface
+   \item Vectorization may increase performance
+  \end{itemize}
+ \end{frame} 
+ 
+ \begin{frame}{MixMax}
+  \begin{itemize}
+   \item MixMax passes the BigCrush test suite
+   \item MixMax has several implementations with different state size
+   \item In Geant4 10.04 beta the state size is 17
+   \item MixMax has several seeding mechanisms
+  \end{itemize}
+ \end{frame}
+ 
+ \begin{frame}{CLHEP engines}
+    Ranecu, Ranlux, HepJamesRandom, Ranshi, DualRand - legacy engines kept for compatibility and should not be used.
+    \\ \textcolor{red}{ - Not indicated in the manual!}\\
+    HepJamesRandom is the default, and Ranecu is used in many examples $\Rightarrow$ get in the user code.\\ \ \\
+    Ranlux64 is good enough, but slower than others.\\
+    MTwister is the currently recommended Geant4 engine and passes most of the tests, but not all
+ \end{frame}
  
  
  \begin{frame}{Performance}
@@ -80,20 +128,6 @@ supervised by John Apostolakis and Sandro Wenzel}
   \end{figure}
  \end{frame}
 
- \begin{frame}{Counter-Based Pseudo-Random Number Generators}
-  \begin{itemize}
-   \item CPRNG state transition function is a simple increment
-   \item The randomness is produces by the output function
-   \item Seeding is a single assignment
-   \item A cryptographic function can be used as the output function
-   \item Faster functions can be used under relaxed requirements
-   \item Random123 library provides a set of such functions
-   \item Philox1x64, Threefry1x64 were wrapped in a CLHEP interface
-   \item Vectorization may increase performance
-  \end{itemize}
-
- \end{frame}
- 
  
  \begin{frame}{Conclusion}
   \begin{itemize}
