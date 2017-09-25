@@ -1,0 +1,2277 @@
+\begin{tikzpicture}
+\pgfdeclareplotmark{cross} {
+\pgfpathmoveto{\pgfpoint{-0.3\pgfplotmarksize}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+1\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+1\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{-1.\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-0.3\pgfplotmarksize}{-1.\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-0.3\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-1.\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-1.\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-0.3\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathclose
+\pgfusepathqstroke
+}
+\pgfdeclareplotmark{cross*} {
+\pgfpathmoveto{\pgfpoint{-0.3\pgfplotmarksize}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+1\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+1\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{+0.3\pgfplotmarksize}{-1.\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-0.3\pgfplotmarksize}{-1.\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-0.3\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-1.\pgfplotmarksize}{-0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-1.\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathlineto{\pgfpoint{-0.3\pgfplotmarksize}{0.3\pgfplotmarksize}}
+\pgfpathclose
+\pgfusepathqfillstroke
+}
+\pgfdeclareplotmark{newstar} {
+\pgfpathmoveto{\pgfqpoint{0pt}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{44}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{18}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{-20}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{-54}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{-90}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{234}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{198}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{162}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{134}{0.5\pgfplotmarksize}}
+\pgfpathclose
+\pgfusepathqstroke
+}
+\pgfdeclareplotmark{newstar*} {
+\pgfpathmoveto{\pgfqpoint{0pt}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{44}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{18}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{-20}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{-54}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{-90}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{234}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{198}{0.5\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{162}{\pgfplotmarksize}}
+\pgfpathlineto{\pgfqpointpolar{134}{0.5\pgfplotmarksize}}
+\pgfpathclose
+\pgfusepathqfillstroke
+}
+\definecolor{c}{rgb}{1,1,1};
+\draw [color=c, fill=c] (0,0) rectangle (20,10.9543);
+\draw [color=c, fill=c] (2,1.09543) rectangle (18,9.85885);
+\definecolor{c}{rgb}{0,0,0};
+\draw [c,line width=0.9] (2,1.09543) -- (2,9.85885) -- (18,9.85885) -- (18,1.09543) -- (2,1.09543);
+\definecolor{c}{rgb}{1,1,1};
+\draw [color=c, fill=c] (2,1.09543) rectangle (18,9.85885);
+\definecolor{c}{rgb}{0,0,0};
+\draw [c,line width=0.9] (2,1.09543) -- (2,9.85885) -- (18,9.85885) -- (18,1.09543) -- (2,1.09543);
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2.08,9.2306) -- (2.08,9.25101);
+\draw [c,line width=2.7] (2.08,9.25101) -- (2.08,9.27098);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.08,9.25101)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2.24,8.38866) -- (2.24,8.42092);
+\draw [c,line width=2.7] (2.24,8.42092) -- (2.24,8.45208);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.24,8.42092)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2.4,7.86099) -- (2.4,7.90396);
+\draw [c,line width=2.7] (2.4,7.90396) -- (2.4,7.94502);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.4,7.90396)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2.56,7.84914) -- (2.56,7.89239);
+\draw [c,line width=2.7] (2.56,7.89239) -- (2.56,7.9337);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.56,7.89239)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2.72,7.24762) -- (2.72,7.30759);
+\draw [c,line width=2.7] (2.72,7.30759) -- (2.72,7.36389);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.72,7.30759)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2.88,7.22461) -- (2.88,7.28533);
+\draw [c,line width=2.7] (2.88,7.28533) -- (2.88,7.3423);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.88,7.28533)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (3.04,7.62812) -- (3.04,7.67689);
+\draw [c,line width=2.7] (3.04,7.67689) -- (3.04,7.7232);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.04,7.67689)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (3.2,6.7231) -- (3.2,6.80285);
+\draw [c,line width=2.7] (3.2,6.80285) -- (3.2,6.87623);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.2,6.80285)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (3.36,6.44772) -- (3.36,6.54033);
+\draw [c,line width=2.7] (3.36,6.54033) -- (3.36,6.62447);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.36,6.54033)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (3.52,6.30401) -- (3.52,6.40415);
+\draw [c,line width=2.7] (3.52,6.40415) -- (3.52,6.49444);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.52,6.40415)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (3.68,6.97208) -- (3.68,7.04174);
+\draw [c,line width=2.7] (3.68,7.04174) -- (3.68,7.1065);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.68,7.04174)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (3.84,6.00174) -- (3.84,6.11974);
+\draw [c,line width=2.7] (3.84,6.11974) -- (3.84,6.2243);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.84,6.11974)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4,6.14674) -- (4,6.2558);
+\draw [c,line width=2.7] (4,6.2558) -- (4,6.35329);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4,6.2558)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4.16,5.8964) -- (4.16,6.02134);
+\draw [c,line width=2.7] (4.16,6.02134) -- (4.16,6.13131);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.16,6.02134)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4.32,5.74115) -- (4.32,5.87706);
+\draw [c,line width=2.7] (4.32,5.87706) -- (4.32,5.99546);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.32,5.87706)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4.48,6.14674) -- (4.48,6.2558);
+\draw [c,line width=2.7] (4.48,6.2558) -- (4.48,6.35329);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.48,6.2558)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4.64,5.98739) -- (4.64,6.10631);
+\draw [c,line width=2.7] (4.64,6.10631) -- (4.64,6.21159);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.64,6.10631)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4.8,5.86403) -- (4.8,5.99118);
+\draw [c,line width=2.7] (4.8,5.99118) -- (4.8,6.10286);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.8,5.99118)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (4.96,6.00174) -- (4.96,6.11974);
+\draw [c,line width=2.7] (4.96,6.11974) -- (4.96,6.2243);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.96,6.11974)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (5.12,5.92771) -- (5.12,6.05054);
+\draw [c,line width=2.7] (5.12,6.05054) -- (5.12,6.15889);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.12,6.05054)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (5.28,5.98739) -- (5.28,6.10631);
+\draw [c,line width=2.7] (5.28,6.10631) -- (5.28,6.21159);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.28,6.10631)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (5.44,7.36828) -- (5.44,7.42445);
+\draw [c,line width=2.7] (5.44,7.42445) -- (5.44,7.47738);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.44,7.42445)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (5.6,5.53253) -- (5.6,5.68473);
+\draw [c,line width=2.7] (5.6,5.68473) -- (5.6,5.81529);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.6,5.68473)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (5.76,5.40821) -- (5.76,5.57102);
+\draw [c,line width=2.7] (5.76,5.57102) -- (5.76,5.70931);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.76,5.57102)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (5.92,5.83051) -- (5.92,5.95999);
+\draw [c,line width=2.7] (5.92,5.95999) -- (5.92,6.07348);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.92,5.95999)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (6.08,5.72222) -- (6.08,5.85954);
+\draw [c,line width=2.7] (6.08,5.85954) -- (6.08,5.979);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.08,5.85954)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (6.24,5.7779) -- (6.24,5.91114);
+\draw [c,line width=2.7] (6.24,5.91114) -- (6.24,6.02749);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.24,5.91114)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (6.4,5.35358) -- (6.4,5.52129);
+\draw [c,line width=2.7] (6.4,5.52129) -- (6.4,5.66309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.4,5.52129)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (6.56,6.28308) -- (6.56,6.38436);
+\draw [c,line width=2.7] (6.56,6.38436) -- (6.56,6.47559);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.56,6.38436)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (6.72,9.18467) -- (6.72,9.2056);
+\draw [c,line width=2.7] (6.72,9.2056) -- (6.72,9.22607);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.72,9.2056)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (6.88,2.86256) -- (6.88,3.50016);
+\draw [c,line width=2.7] (6.88,3.50016) -- (6.88,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.88,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (7.04,2.44334) -- (7.04,3.23553);
+\draw [c,line width=2.7] (7.04,3.23553) -- (7.04,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.04,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (7.2,4.10061) -- (7.2,4.43068);
+\draw [c,line width=2.7] (7.2,4.43068) -- (7.2,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.2,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (7.36,3.16014) -- (7.36,3.70542);
+\draw [c,line width=2.7] (7.36,3.70542) -- (7.36,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.36,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (7.52,2.44334) -- (7.52,3.23553);
+\draw [c,line width=2.7] (7.52,3.23553) -- (7.52,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.52,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (7.68,2.44334) -- (7.68,3.23553);
+\draw [c,line width=2.7] (7.68,3.23553) -- (7.68,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.68,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (7.84,2.86256) -- (7.84,3.50016);
+\draw [c,line width=2.7] (7.84,3.50016) -- (7.84,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.84,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8,2.44334) -- (8,3.23553);
+\draw [c,line width=2.7] (8,3.23553) -- (8,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8.16,2.86256) -- (8.16,3.50016);
+\draw [c,line width=2.7] (8.16,3.50016) -- (8.16,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.16,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8.32,3.16014) -- (8.32,3.70542);
+\draw [c,line width=2.7] (8.32,3.70542) -- (8.32,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.32,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8.48,1.09543) -- (8.48,2.22496);
+\draw [c,line width=2.7] (8.48,2.22496) -- (8.48,2.86256);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.48,2.22496)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8.64,3.39051) -- (8.64,3.87313);
+\draw [c,line width=2.7] (8.64,3.87313) -- (8.64,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.64,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8.8,3.16014) -- (8.8,3.70542);
+\draw [c,line width=2.7] (8.8,3.70542) -- (8.8,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.8,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (8.96,2.86256) -- (8.96,3.50016);
+\draw [c,line width=2.7] (8.96,3.50016) -- (8.96,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.96,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (9.12,3.99335) -- (9.12,4.34301);
+\draw [c,line width=2.7] (9.12,4.34301) -- (9.12,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.12,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (9.28,3.73645) -- (9.28,4.13775);
+\draw [c,line width=2.7] (9.28,4.13775) -- (9.28,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.28,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (9.44,4.28555) -- (9.44,4.58435);
+\draw [c,line width=2.7] (9.44,4.58435) -- (9.44,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.44,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (9.6,4.28555) -- (9.6,4.58435);
+\draw [c,line width=2.7] (9.6,4.58435) -- (9.6,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.6,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (9.76,4.1974) -- (9.76,4.51072);
+\draw [c,line width=2.7] (9.76,4.51072) -- (9.76,4.74401);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.76,4.51072)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (9.92,3.99335) -- (9.92,4.34301);
+\draw [c,line width=2.7] (9.92,4.34301) -- (9.92,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.92,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (10.08,3.73645) -- (10.08,4.13775);
+\draw [c,line width=2.7] (10.08,4.13775) -- (10.08,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.08,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (10.24,3.87313) -- (10.24,4.2461);
+\draw [c,line width=2.7] (10.24,4.2461) -- (10.24,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.24,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (10.4,2.44334) -- (10.4,3.23553);
+\draw [c,line width=2.7] (10.4,3.23553) -- (10.4,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.4,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (10.56,3.57821) -- (10.56,4.01492);
+\draw [c,line width=2.7] (10.56,4.01492) -- (10.56,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.56,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (10.72,3.99335) -- (10.72,4.34301);
+\draw [c,line width=2.7] (10.72,4.34301) -- (10.72,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.72,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (10.88,4.28555) -- (10.88,4.58435);
+\draw [c,line width=2.7] (10.88,4.58435) -- (10.88,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.88,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (11.04,4.44125) -- (11.04,4.71598);
+\draw [c,line width=2.7] (11.04,4.71598) -- (11.04,4.92726);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.04,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (11.2,4.10061) -- (11.2,4.43068);
+\draw [c,line width=2.7] (11.2,4.43068) -- (11.2,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.2,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (11.36,4.44125) -- (11.36,4.71598);
+\draw [c,line width=2.7] (11.36,4.71598) -- (11.36,4.92726);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.36,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (11.52,3.99335) -- (11.52,4.34301);
+\draw [c,line width=2.7] (11.52,4.34301) -- (11.52,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.52,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (11.68,2.86256) -- (11.68,3.50016);
+\draw [c,line width=2.7] (11.68,3.50016) -- (11.68,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.68,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (11.84,1.73302) -- (11.84,2.86256);
+\draw [c,line width=2.7] (11.84,2.86256) -- (11.84,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.84,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12,3.16014) -- (12,3.70542);
+\draw [c,line width=2.7] (12,3.70542) -- (12,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.16,2.44334) -- (12.16,3.23553);
+\draw [c,line width=2.7] (12.16,3.23553) -- (12.16,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.16,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.32,6.82362) -- (12.32,6.89913);
+\draw [c,line width=2.7] (12.32,6.89913) -- (12.32,6.96891);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.32,6.89913)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.48,3.39051) -- (12.48,3.87313);
+\draw [c,line width=2.7] (12.48,3.87313) -- (12.48,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.48,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.64,2.86256) -- (12.64,3.50016);
+\draw [c,line width=2.7] (12.64,3.50016) -- (12.64,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.64,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.8,3.87313) -- (12.8,4.2461);
+\draw [c,line width=2.7] (12.8,4.2461) -- (12.8,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.8,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.96,3.57821) -- (12.96,4.01492);
+\draw [c,line width=2.7] (12.96,4.01492) -- (12.96,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.96,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (13.12,3.73645) -- (13.12,4.13775);
+\draw [c,line width=2.7] (13.12,4.13775) -- (13.12,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.12,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (13.28,3.73645) -- (13.28,4.13775);
+\draw [c,line width=2.7] (13.28,4.13775) -- (13.28,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.28,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (13.44,3.16014) -- (13.44,3.70542);
+\draw [c,line width=2.7] (13.44,3.70542) -- (13.44,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.44,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (13.6,3.99335) -- (13.6,4.34301);
+\draw [c,line width=2.7] (13.6,4.34301) -- (13.6,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.6,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (13.76,4.5756) -- (13.76,4.83111);
+\draw [c,line width=2.7] (13.76,4.83111) -- (13.76,5.03087);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.76,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (13.92,5.16814) -- (13.92,5.35358);
+\draw [c,line width=2.7] (13.92,5.35358) -- (13.92,5.50783);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.92,5.35358)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (14.08,5.23401) -- (14.08,5.41295);
+\draw [c,line width=2.7] (14.08,5.41295) -- (14.08,5.56268);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.08,5.41295)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (14.24,5.26532) -- (14.24,5.44125);
+\draw [c,line width=2.7] (14.24,5.44125) -- (14.24,5.58887);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.24,5.44125)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (14.4,5.60004) -- (14.4,5.74677);
+\draw [c,line width=2.7] (14.4,5.74677) -- (14.4,5.87328);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.4,5.74677)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (14.56,5.50892) -- (14.56,5.66309);
+\draw [c,line width=2.7] (14.56,5.66309) -- (14.56,5.79508);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.56,5.66309)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (14.72,5.26532) -- (14.72,5.44125);
+\draw [c,line width=2.7] (14.72,5.44125) -- (14.72,5.58887);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.72,5.44125)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (14.88,5.13344) -- (14.88,5.32239);
+\draw [c,line width=2.7] (14.88,5.32239) -- (14.88,5.47907);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.88,5.32239)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (15.04,4.98061) -- (15.04,5.18587);
+\draw [c,line width=2.7] (15.04,5.18587) -- (15.04,5.35358);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.04,5.18587)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (15.2,4.9383) -- (15.2,5.14832);
+\draw [c,line width=2.7] (15.2,5.14832) -- (15.2,5.31918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.2,5.14832)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (15.36,5.09744) -- (15.36,5.29012);
+\draw [c,line width=2.7] (15.36,5.29012) -- (15.36,5.44934);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.36,5.29012)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (15.52,4.98061) -- (15.52,5.18587);
+\draw [c,line width=2.7] (15.52,5.18587) -- (15.52,5.35358);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.52,5.18587)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (15.68,4.10061) -- (15.68,4.43068);
+\draw [c,line width=2.7] (15.68,4.43068) -- (15.68,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.68,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (15.84,1.73302) -- (15.84,2.86256);
+\draw [c,line width=2.7] (15.84,2.86256) -- (15.84,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.84,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (2,9.25101) -- (2.16,9.25101) -- (2.16,8.42092) -- (2.32,8.42092) -- (2.32,7.90396) -- (2.48,7.90396) -- (2.48,7.89239) -- (2.64,7.89239) -- (2.64,7.30759) -- (2.8,7.30759) -- (2.8,7.28533) -- (2.96,7.28533) -- (2.96,7.67689)
+ -- (3.12,7.67689) -- (3.12,6.80285) -- (3.28,6.80285) -- (3.28,6.54033) -- (3.44,6.54033) -- (3.44,6.40415) -- (3.6,6.40415) -- (3.6,7.04174) -- (3.76,7.04174) -- (3.76,6.11974) -- (3.92,6.11974) -- (3.92,6.2558) -- (4.08,6.2558) -- (4.08,6.02134)
+ -- (4.24,6.02134) -- (4.24,5.87706) -- (4.4,5.87706) -- (4.4,6.2558) -- (4.56,6.2558) -- (4.56,6.10631) -- (4.72,6.10631) -- (4.72,5.99118) -- (4.88,5.99118) -- (4.88,6.11974) -- (5.04,6.11974) -- (5.04,6.05054) -- (5.2,6.05054) -- (5.2,6.10631) --
+ (5.36,6.10631) -- (5.36,7.42445) -- (5.52,7.42445) -- (5.52,5.68473) -- (5.68,5.68473) -- (5.68,5.57102) -- (5.84,5.57102) -- (5.84,5.95999) -- (6,5.95999) -- (6,5.85954) -- (6.16,5.85954) -- (6.16,5.91114) -- (6.32,5.91114) -- (6.32,5.52129) --
+ (6.48,5.52129) -- (6.48,6.38436) -- (6.64,6.38436) -- (6.64,9.2056) -- (6.8,9.2056) -- (6.8,3.50016) -- (6.96,3.50016) -- (6.96,3.23553) -- (7.12,3.23553) -- (7.12,4.43068) -- (7.28,4.43068) -- (7.28,3.70542) -- (7.44,3.70542) -- (7.44,3.23553) --
+ (7.6,3.23553) -- (7.6,3.23553) -- (7.76,3.23553) -- (7.76,3.50016) -- (7.92,3.50016) -- (7.92,3.23553) -- (8.08,3.23553) -- (8.08,3.50016) -- (8.24,3.50016) -- (8.24,3.70542) -- (8.4,3.70542) -- (8.4,2.22496) -- (8.56,2.22496) -- (8.56,3.87313) --
+ (8.72,3.87313) -- (8.72,3.70542) -- (8.88,3.70542) -- (8.88,3.50016) -- (9.04,3.50016) -- (9.04,4.34301) -- (9.2,4.34301) -- (9.2,4.13775) -- (9.36,4.13775) -- (9.36,4.58435) -- (9.52,4.58435) -- (9.52,4.58435) -- (9.68,4.58435) -- (9.68,4.51072) --
+ (9.84,4.51072) -- (9.84,4.34301) -- (10,4.34301) -- (10,4.13775) -- (10.16,4.13775) -- (10.16,4.2461) -- (10.32,4.2461) -- (10.32,3.23553) -- (10.48,3.23553) -- (10.48,4.01492) -- (10.64,4.01492) -- (10.64,4.34301) -- (10.8,4.34301) --
+ (10.8,4.58435) -- (10.96,4.58435) -- (10.96,4.71598) -- (11.12,4.71598) -- (11.12,4.43068) -- (11.28,4.43068) -- (11.28,4.71598) -- (11.44,4.71598) -- (11.44,4.34301) -- (11.6,4.34301) -- (11.6,3.50016) -- (11.76,3.50016) -- (11.76,2.86256) --
+ (11.92,2.86256) -- (11.92,3.70542) -- (12.08,3.70542) -- (12.08,3.23553) -- (12.24,3.23553) -- (12.24,6.89913) -- (12.4,6.89913) -- (12.4,3.87313) -- (12.56,3.87313) -- (12.56,3.50016) -- (12.72,3.50016) -- (12.72,4.2461) -- (12.88,4.2461) --
+ (12.88,4.01492) -- (13.04,4.01492) -- (13.04,4.13775) -- (13.2,4.13775) -- (13.2,4.13775) -- (13.36,4.13775) -- (13.36,3.70542) -- (13.52,3.70542) -- (13.52,4.34301) -- (13.68,4.34301) -- (13.68,4.83111) -- (13.84,4.83111) -- (13.84,5.35358) --
+ (14,5.35358) -- (14,5.41295) -- (14.16,5.41295) -- (14.16,5.44125) -- (14.32,5.44125) -- (14.32,5.74677) -- (14.48,5.74677) -- (14.48,5.66309) -- (14.64,5.66309) -- (14.64,5.44125) -- (14.8,5.44125) -- (14.8,5.32239) -- (14.96,5.32239) --
+ (14.96,5.18587) -- (15.12,5.18587) -- (15.12,5.14832) -- (15.28,5.14832) -- (15.28,5.29012) -- (15.44,5.29012) -- (15.44,5.18587) -- (15.6,5.18587) -- (15.6,4.43068) -- (15.76,4.43068) -- (15.76,2.86256) -- (15.92,2.86256) -- (15.92,1.09543) --
+ (16.08,1.09543) -- (16.08,1.09543) -- (16.24,1.09543) -- (16.24,1.09543) -- (16.4,1.09543) -- (16.4,1.09543) -- (16.56,1.09543) -- (16.56,1.09543) -- (16.72,1.09543) -- (16.72,1.09543) -- (16.88,1.09543) -- (16.88,1.09543) -- (17.04,1.09543) --
+ (17.04,1.09543) -- (17.2,1.09543) -- (17.2,1.09543) -- (17.36,1.09543) -- (17.36,1.09543) -- (17.52,1.09543) -- (17.52,1.09543) -- (17.68,1.09543) -- (17.68,1.09543) -- (17.84,1.09543) -- (17.84,1.09543) -- (18,1.09543);
+\definecolor{c}{rgb}{0,0,0};
+\draw [c,line width=0.9] (2,1.09543) -- (18,1.09543);
+\draw [c,line width=0.9] (2,1.35833) -- (2,1.09543);
+\draw [c,line width=0.9] (2.53333,1.22688) -- (2.53333,1.09543);
+\draw [c,line width=0.9] (3.06667,1.22688) -- (3.06667,1.09543);
+\draw [c,line width=0.9] (3.6,1.22688) -- (3.6,1.09543);
+\draw [c,line width=0.9] (4.13333,1.35833) -- (4.13333,1.09543);
+\draw [c,line width=0.9] (4.66667,1.22688) -- (4.66667,1.09543);
+\draw [c,line width=0.9] (5.2,1.22688) -- (5.2,1.09543);
+\draw [c,line width=0.9] (5.73333,1.22688) -- (5.73333,1.09543);
+\draw [c,line width=0.9] (6.26667,1.35833) -- (6.26667,1.09543);
+\draw [c,line width=0.9] (6.8,1.22688) -- (6.8,1.09543);
+\draw [c,line width=0.9] (7.33333,1.22688) -- (7.33333,1.09543);
+\draw [c,line width=0.9] (7.86667,1.22688) -- (7.86667,1.09543);
+\draw [c,line width=0.9] (8.4,1.35833) -- (8.4,1.09543);
+\draw [c,line width=0.9] (8.93333,1.22688) -- (8.93333,1.09543);
+\draw [c,line width=0.9] (9.46667,1.22688) -- (9.46667,1.09543);
+\draw [c,line width=0.9] (10,1.22688) -- (10,1.09543);
+\draw [c,line width=0.9] (10.5333,1.35833) -- (10.5333,1.09543);
+\draw [c,line width=0.9] (11.0667,1.22688) -- (11.0667,1.09543);
+\draw [c,line width=0.9] (11.6,1.22688) -- (11.6,1.09543);
+\draw [c,line width=0.9] (12.1333,1.22688) -- (12.1333,1.09543);
+\draw [c,line width=0.9] (12.6667,1.35833) -- (12.6667,1.09543);
+\draw [c,line width=0.9] (13.2,1.22688) -- (13.2,1.09543);
+\draw [c,line width=0.9] (13.7333,1.22688) -- (13.7333,1.09543);
+\draw [c,line width=0.9] (14.2667,1.22688) -- (14.2667,1.09543);
+\draw [c,line width=0.9] (14.8,1.35833) -- (14.8,1.09543);
+\draw [c,line width=0.9] (15.3333,1.22688) -- (15.3333,1.09543);
+\draw [c,line width=0.9] (15.8667,1.22688) -- (15.8667,1.09543);
+\draw [c,line width=0.9] (16.4,1.22688) -- (16.4,1.09543);
+\draw [c,line width=0.9] (16.9333,1.35833) -- (16.9333,1.09543);
+\draw [c,line width=0.9] (16.9333,1.35833) -- (16.9333,1.09543);
+\draw [c,line width=0.9] (17.4667,1.22688) -- (17.4667,1.09543);
+\draw [anchor=base] (2,0.690119) node[scale=0.971398, color=c, rotate=0]{0};
+\draw [anchor=base] (4.13333,0.690119) node[scale=0.971398, color=c, rotate=0]{2};
+\draw [anchor=base] (6.26667,0.690119) node[scale=0.971398, color=c, rotate=0]{4};
+\draw [anchor=base] (8.4,0.690119) node[scale=0.971398, color=c, rotate=0]{6};
+\draw [anchor=base] (10.5333,0.690119) node[scale=0.971398, color=c, rotate=0]{8};
+\draw [anchor=base] (12.6667,0.690119) node[scale=0.971398, color=c, rotate=0]{10};
+\draw [anchor=base] (14.8,0.690119) node[scale=0.971398, color=c, rotate=0]{12};
+\draw [anchor=base] (16.9333,0.690119) node[scale=0.971398, color=c, rotate=0]{14};
+\draw [anchor= east] (18,0.394354) node[scale=0.971398, color=c, rotate=0]{ [MeV]};
+\draw [c,line width=0.9] (2,1.09543) -- (2,9.85885);
+\draw [c,line width=0.9] (2.24,1.11748) -- (2,1.11748);
+\draw [c,line width=0.9] (2.24,1.38211) -- (2,1.38211);
+\draw [c,line width=0.9] (2.24,1.58737) -- (2,1.58737);
+\draw [c,line width=0.9] (2.24,1.75508) -- (2,1.75508);
+\draw [c,line width=0.9] (2.24,1.89688) -- (2,1.89688);
+\draw [c,line width=0.9] (2.24,2.01971) -- (2,2.01971);
+\draw [c,line width=0.9] (2.24,2.12805) -- (2,2.12805);
+\draw [c,line width=0.9] (2.48,2.22497) -- (2,2.22497);
+\draw [anchor= east] (1.836,2.22497) node[scale=0.971398, color=c, rotate=0]{1};
+\draw [c,line width=0.9] (2.24,2.86256) -- (2,2.86256);
+\draw [c,line width=0.9] (2.24,3.23553) -- (2,3.23553);
+\draw [c,line width=0.9] (2.24,3.50016) -- (2,3.50016);
+\draw [c,line width=0.9] (2.24,3.70542) -- (2,3.70542);
+\draw [c,line width=0.9] (2.24,3.87313) -- (2,3.87313);
+\draw [c,line width=0.9] (2.24,4.01492) -- (2,4.01492);
+\draw [c,line width=0.9] (2.24,4.13775) -- (2,4.13775);
+\draw [c,line width=0.9] (2.24,4.2461) -- (2,4.2461);
+\draw [c,line width=0.9] (2.48,4.34301) -- (2,4.34301);
+\draw [anchor= east] (1.836,4.34301) node[scale=0.971398, color=c, rotate=0]{10};
+\draw [c,line width=0.9] (2.24,4.98061) -- (2,4.98061);
+\draw [c,line width=0.9] (2.24,5.35358) -- (2,5.35358);
+\draw [c,line width=0.9] (2.24,5.61821) -- (2,5.61821);
+\draw [c,line width=0.9] (2.24,5.82347) -- (2,5.82347);
+\draw [c,line width=0.9] (2.24,5.99118) -- (2,5.99118);
+\draw [c,line width=0.9] (2.24,6.13297) -- (2,6.13297);
+\draw [c,line width=0.9] (2.24,6.2558) -- (2,6.2558);
+\draw [c,line width=0.9] (2.24,6.36415) -- (2,6.36415);
+\draw [c,line width=0.9] (2.48,6.46106) -- (2,6.46106);
+\draw [anchor= east] (1.836,6.46106) node[scale=0.971398, color=c, rotate=0]{$10^{2}$};
+\draw [c,line width=0.9] (2.24,7.09866) -- (2,7.09866);
+\draw [c,line width=0.9] (2.24,7.47163) -- (2,7.47163);
+\draw [c,line width=0.9] (2.24,7.73626) -- (2,7.73626);
+\draw [c,line width=0.9] (2.24,7.94151) -- (2,7.94151);
+\draw [c,line width=0.9] (2.24,8.10923) -- (2,8.10923);
+\draw [c,line width=0.9] (2.24,8.25102) -- (2,8.25102);
+\draw [c,line width=0.9] (2.24,8.37385) -- (2,8.37385);
+\draw [c,line width=0.9] (2.24,8.48219) -- (2,8.48219);
+\draw [c,line width=0.9] (2.48,8.57911) -- (2,8.57911);
+\draw [anchor= east] (1.836,8.57911) node[scale=0.971398, color=c, rotate=0]{$10^{3}$};
+\draw [c,line width=0.9] (2.24,9.21671) -- (2,9.21671);
+\draw [c,line width=0.9] (2.24,9.58968) -- (2,9.58968);
+\draw [c,line width=0.9] (2.24,9.8543) -- (2,9.8543);
+\draw (10,10.5655) node[scale=1.28048, color=c, rotate=0]{energy spectrum of emerging gamma};
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2.08,9.23552) -- (2.08,9.25588);
+\draw [c,line width=2.7] (2.08,9.25588) -- (2.08,9.27579);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.08,9.25588)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2.24,8.34074) -- (2.24,8.37385);
+\draw [c,line width=2.7] (2.24,8.37385) -- (2.24,8.40581);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.24,8.37385)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2.4,7.91066) -- (2.4,7.95249);
+\draw [c,line width=2.7] (2.4,7.95249) -- (2.4,7.9925);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.4,7.95249)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2.56,7.86686) -- (2.56,7.9097);
+\draw [c,line width=2.7] (2.56,7.9097) -- (2.56,7.95063);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.56,7.9097)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2.72,7.27007) -- (2.72,7.32932);
+\draw [c,line width=2.7] (2.72,7.32932) -- (2.72,7.38498);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.72,7.32932)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2.88,7.0312) -- (2.88,7.09866);
+\draw [c,line width=2.7] (2.88,7.09866) -- (2.88,7.16151);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.88,7.09866)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (3.04,7.47512) -- (3.04,7.52812);
+\draw [c,line width=2.7] (3.04,7.52812) -- (3.04,7.57823);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.04,7.52812)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (3.2,6.74925) -- (3.2,6.82788);
+\draw [c,line width=2.7] (3.2,6.82788) -- (3.2,6.90031);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.2,6.82788)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (3.36,6.37381) -- (3.36,6.47021);
+\draw [c,line width=2.7] (3.36,6.47021) -- (3.36,6.55747);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.36,6.47021)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (3.52,6.40221) -- (3.52,6.49714);
+\draw [c,line width=2.7] (3.52,6.49714) -- (3.52,6.58319);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.52,6.49714)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (3.68,7.06864) -- (3.68,7.13474);
+\draw [c,line width=2.7] (3.68,7.13474) -- (3.68,7.1964);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.68,7.13474)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (3.84,5.70292) -- (3.84,5.84168);
+\draw [c,line width=2.7] (3.84,5.84168) -- (3.84,5.96223);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.84,5.84168)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4,5.88035) -- (4,6.00638);
+\draw [c,line width=2.7] (4,6.00638) -- (4,6.1172);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4,6.00638)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4.16,5.88035) -- (4.16,6.00638);
+\draw [c,line width=2.7] (4.16,6.00638) -- (4.16,6.1172);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.16,6.00638)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4.32,6.07041) -- (4.32,6.18409);
+\draw [c,line width=2.7] (4.32,6.18409) -- (4.32,6.28525);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.32,6.18409)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4.48,5.74115) -- (4.48,5.87706);
+\draw [c,line width=2.7] (4.48,5.87706) -- (4.48,5.99546);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.48,5.87706)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4.64,5.74115) -- (4.64,5.87706);
+\draw [c,line width=2.7] (4.64,5.87706) -- (4.64,5.99546);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.64,5.87706)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4.8,5.88035) -- (4.8,6.00638);
+\draw [c,line width=2.7] (4.8,6.00638) -- (4.8,6.1172);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.8,6.00638)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (4.96,5.84741) -- (4.96,5.97572);
+\draw [c,line width=2.7] (4.96,5.97572) -- (4.96,6.08829);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.96,5.97572)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (5.12,5.4344) -- (5.12,5.59492);
+\draw [c,line width=2.7] (5.12,5.59492) -- (5.12,5.73154);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.12,5.59492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (5.28,5.66309) -- (5.28,5.80488);
+\draw [c,line width=2.7] (5.28,5.80488) -- (5.28,5.92771);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.28,5.80488)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (5.44,7.24762) -- (5.44,7.30759);
+\draw [c,line width=2.7] (5.44,7.30759) -- (5.44,7.36389);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.44,7.30759)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (5.6,5.32505) -- (5.6,5.49538);
+\draw [c,line width=2.7] (5.6,5.49538) -- (5.6,5.63903);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.6,5.49538)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (5.76,5.81329) -- (5.76,5.94399);
+\draw [c,line width=2.7] (5.76,5.94399) -- (5.76,6.05841);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.76,5.94399)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (5.92,5.50892) -- (5.92,5.66309);
+\draw [c,line width=2.7] (5.92,5.66309) -- (5.92,5.79508);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.92,5.66309)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (6.08,5.45989) -- (6.08,5.61821);
+\draw [c,line width=2.7] (6.08,5.61821) -- (6.08,5.75323);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.08,5.61821)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (6.24,5.50892) -- (6.24,5.66309);
+\draw [c,line width=2.7] (6.24,5.66309) -- (6.24,5.79508);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.24,5.66309)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (6.4,5.7779) -- (6.4,5.91114);
+\draw [c,line width=2.7] (6.4,5.91114) -- (6.4,6.02749);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.4,5.91114)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (6.56,6.02981) -- (6.56,6.14602);
+\draw [c,line width=2.7] (6.56,6.14602) -- (6.56,6.24918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.56,6.14602)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (6.72,9.19869) -- (6.72,9.21946);
+\draw [c,line width=2.7] (6.72,9.21946) -- (6.72,9.23977);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.72,9.21946)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (6.88,3.16014) -- (6.88,3.70542);
+\draw [c,line width=2.7] (6.88,3.70542) -- (6.88,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.88,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (7.04,3.87313) -- (7.04,4.2461);
+\draw [c,line width=2.7] (7.04,4.2461) -- (7.04,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.04,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (7.2,4.28555) -- (7.2,4.58435);
+\draw [c,line width=2.7] (7.2,4.58435) -- (7.2,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.2,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (7.36,3.73645) -- (7.36,4.13775);
+\draw [c,line width=2.7] (7.36,4.13775) -- (7.36,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.36,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (7.52,2.44334) -- (7.52,3.23553);
+\draw [c,line width=2.7] (7.52,3.23553) -- (7.52,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.52,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (7.68,3.73645) -- (7.68,4.13775);
+\draw [c,line width=2.7] (7.68,4.13775) -- (7.68,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.68,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (7.84,3.39051) -- (7.84,3.87313);
+\draw [c,line width=2.7] (7.84,3.87313) -- (7.84,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.84,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8,1.09543) -- (8,2.22496);
+\draw [c,line width=2.7] (8,2.22496) -- (8,2.86256);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8,2.22496)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8.16,2.86256) -- (8.16,3.50016);
+\draw [c,line width=2.7] (8.16,3.50016) -- (8.16,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.16,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8.32,3.16014) -- (8.32,3.70542);
+\draw [c,line width=2.7] (8.32,3.70542) -- (8.32,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.32,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8.48,2.86256) -- (8.48,3.50016);
+\draw [c,line width=2.7] (8.48,3.50016) -- (8.48,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.48,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8.64,3.73645) -- (8.64,4.13775);
+\draw [c,line width=2.7] (8.64,4.13775) -- (8.64,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.64,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8.8,2.86256) -- (8.8,3.50016);
+\draw [c,line width=2.7] (8.8,3.50016) -- (8.8,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.8,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (8.96,3.16014) -- (8.96,3.70542);
+\draw [c,line width=2.7] (8.96,3.70542) -- (8.96,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.96,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (9.12,3.39051) -- (9.12,3.87313);
+\draw [c,line width=2.7] (9.12,3.87313) -- (9.12,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.12,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (9.28,4.28555) -- (9.28,4.58435);
+\draw [c,line width=2.7] (9.28,4.58435) -- (9.28,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.28,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (9.44,4.10061) -- (9.44,4.43068);
+\draw [c,line width=2.7] (9.44,4.43068) -- (9.44,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.44,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (9.6,4.5756) -- (9.6,4.83111);
+\draw [c,line width=2.7] (9.6,4.83111) -- (9.6,5.03087);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.6,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (9.76,4.36647) -- (9.76,4.65252);
+\draw [c,line width=2.7] (9.76,4.65252) -- (9.76,4.87039);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.76,4.65252)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (9.92,3.73645) -- (9.92,4.13775);
+\draw [c,line width=2.7] (9.92,4.13775) -- (9.92,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.92,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (10.08,3.57821) -- (10.08,4.01492);
+\draw [c,line width=2.7] (10.08,4.01492) -- (10.08,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.08,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (10.24,3.57821) -- (10.24,4.01492);
+\draw [c,line width=2.7] (10.24,4.01492) -- (10.24,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.24,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (10.4,3.39051) -- (10.4,3.87313);
+\draw [c,line width=2.7] (10.4,3.87313) -- (10.4,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.4,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (10.56,4.10061) -- (10.56,4.43068);
+\draw [c,line width=2.7] (10.56,4.43068) -- (10.56,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.56,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (10.72,3.87313) -- (10.72,4.2461);
+\draw [c,line width=2.7] (10.72,4.2461) -- (10.72,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.72,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (10.88,4.10061) -- (10.88,4.43068);
+\draw [c,line width=2.7] (10.88,4.43068) -- (10.88,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.88,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (11.04,4.10061) -- (11.04,4.43068);
+\draw [c,line width=2.7] (11.04,4.43068) -- (11.04,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.04,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (11.2,4.1974) -- (11.2,4.51072);
+\draw [c,line width=2.7] (11.2,4.51072) -- (11.2,4.74401);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.2,4.51072)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (11.36,4.36647) -- (11.36,4.65252);
+\draw [c,line width=2.7] (11.36,4.65252) -- (11.36,4.87039);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.36,4.65252)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (11.52,4.44125) -- (11.52,4.71598);
+\draw [c,line width=2.7] (11.52,4.71598) -- (11.52,4.92726);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.52,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (11.68,4.28555) -- (11.68,4.58435);
+\draw [c,line width=2.7] (11.68,4.58435) -- (11.68,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.68,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (11.84,3.73645) -- (11.84,4.13775);
+\draw [c,line width=2.7] (11.84,4.13775) -- (11.84,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.84,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12,2.44334) -- (12,3.23553);
+\draw [c,line width=2.7] (12,3.23553) -- (12,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.16,3.16014) -- (12.16,3.70542);
+\draw [c,line width=2.7] (12.16,3.70542) -- (12.16,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.16,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.32,6.90898) -- (12.32,6.98107);
+\draw [c,line width=2.7] (12.32,6.98107) -- (12.32,7.04792);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.32,6.98107)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.48,1.73302) -- (12.48,2.86256);
+\draw [c,line width=2.7] (12.48,2.86256) -- (12.48,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.48,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.64,2.44334) -- (12.64,3.23553);
+\draw [c,line width=2.7] (12.64,3.23553) -- (12.64,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.64,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.8,3.73645) -- (12.8,4.13775);
+\draw [c,line width=2.7] (12.8,4.13775) -- (12.8,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.8,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.96,2.44334) -- (12.96,3.23553);
+\draw [c,line width=2.7] (12.96,3.23553) -- (12.96,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.96,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (13.12,3.39051) -- (13.12,3.87313);
+\draw [c,line width=2.7] (13.12,3.87313) -- (13.12,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.12,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (13.28,3.39051) -- (13.28,3.87313);
+\draw [c,line width=2.7] (13.28,3.87313) -- (13.28,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.28,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (13.44,3.73645) -- (13.44,4.13775);
+\draw [c,line width=2.7] (13.44,4.13775) -- (13.44,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.44,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (13.6,3.16014) -- (13.6,3.70542);
+\draw [c,line width=2.7] (13.6,3.70542) -- (13.6,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.6,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (13.76,4.5756) -- (13.76,4.83111);
+\draw [c,line width=2.7] (13.76,4.83111) -- (13.76,5.03087);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.76,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (13.92,5.16814) -- (13.92,5.35358);
+\draw [c,line width=2.7] (13.92,5.35358) -- (13.92,5.50783);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.92,5.35358)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (14.08,5.35358) -- (14.08,5.52129);
+\draw [c,line width=2.7] (14.08,5.52129) -- (14.08,5.66309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.08,5.52129)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (14.24,5.62152) -- (14.24,5.76655);
+\draw [c,line width=2.7] (14.24,5.76655) -- (14.24,5.8918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.24,5.76655)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (14.4,5.66309) -- (14.4,5.80488);
+\draw [c,line width=2.7] (14.4,5.80488) -- (14.4,5.92771);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.4,5.80488)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (14.56,5.45989) -- (14.56,5.61821);
+\draw [c,line width=2.7] (14.56,5.61821) -- (14.56,5.75323);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.56,5.61821)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (14.72,5.16814) -- (14.72,5.35358);
+\draw [c,line width=2.7] (14.72,5.35358) -- (14.72,5.50783);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.72,5.35358)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (14.88,4.84772) -- (14.88,5.06828);
+\draw [c,line width=2.7] (14.88,5.06828) -- (14.88,5.24605);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.88,5.06828)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (15.04,5.02114) -- (15.04,5.22195);
+\draw [c,line width=2.7] (15.04,5.22195) -- (15.04,5.38667);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.04,5.22195)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (15.2,4.98061) -- (15.2,5.18587);
+\draw [c,line width=2.7] (15.2,5.18587) -- (15.2,5.35358);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.2,5.18587)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (15.36,5.06004) -- (15.36,5.25666);
+\draw [c,line width=2.7] (15.36,5.25666) -- (15.36,5.41857);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.36,5.25666)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (15.52,4.9383) -- (15.52,5.14832);
+\draw [c,line width=2.7] (15.52,5.14832) -- (15.52,5.31918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.52,5.14832)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (15.68,4.44125) -- (15.68,4.71598);
+\draw [c,line width=2.7] (15.68,4.71598) -- (15.68,4.92726);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.68,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (15.84,1.73302) -- (15.84,2.86256);
+\draw [c,line width=2.7] (15.84,2.86256) -- (15.84,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.84,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (2,9.25588) -- (2.16,9.25588) -- (2.16,8.37385) -- (2.32,8.37385) -- (2.32,7.95249) -- (2.48,7.95249) -- (2.48,7.9097) -- (2.64,7.9097) -- (2.64,7.32932) -- (2.8,7.32932) -- (2.8,7.09866) -- (2.96,7.09866) -- (2.96,7.52812)
+ -- (3.12,7.52812) -- (3.12,6.82788) -- (3.28,6.82788) -- (3.28,6.47021) -- (3.44,6.47021) -- (3.44,6.49714) -- (3.6,6.49714) -- (3.6,7.13474) -- (3.76,7.13474) -- (3.76,5.84168) -- (3.92,5.84168) -- (3.92,6.00638) -- (4.08,6.00638) -- (4.08,6.00638)
+ -- (4.24,6.00638) -- (4.24,6.18409) -- (4.4,6.18409) -- (4.4,5.87706) -- (4.56,5.87706) -- (4.56,5.87706) -- (4.72,5.87706) -- (4.72,6.00638) -- (4.88,6.00638) -- (4.88,5.97572) -- (5.04,5.97572) -- (5.04,5.59492) -- (5.2,5.59492) -- (5.2,5.80488)
+ -- (5.36,5.80488) -- (5.36,7.30759) -- (5.52,7.30759) -- (5.52,5.49538) -- (5.68,5.49538) -- (5.68,5.94399) -- (5.84,5.94399) -- (5.84,5.66309) -- (6,5.66309) -- (6,5.61821) -- (6.16,5.61821) -- (6.16,5.66309) -- (6.32,5.66309) -- (6.32,5.91114) --
+ (6.48,5.91114) -- (6.48,6.14602) -- (6.64,6.14602) -- (6.64,9.21946) -- (6.8,9.21946) -- (6.8,3.70542) -- (6.96,3.70542) -- (6.96,4.2461) -- (7.12,4.2461) -- (7.12,4.58435) -- (7.28,4.58435) -- (7.28,4.13775) -- (7.44,4.13775) -- (7.44,3.23553) --
+ (7.6,3.23553) -- (7.6,4.13775) -- (7.76,4.13775) -- (7.76,3.87313) -- (7.92,3.87313) -- (7.92,2.22496) -- (8.08,2.22496) -- (8.08,3.50016) -- (8.24,3.50016) -- (8.24,3.70542) -- (8.4,3.70542) -- (8.4,3.50016) -- (8.56,3.50016) -- (8.56,4.13775) --
+ (8.72,4.13775) -- (8.72,3.50016) -- (8.88,3.50016) -- (8.88,3.70542) -- (9.04,3.70542) -- (9.04,3.87313) -- (9.2,3.87313) -- (9.2,4.58435) -- (9.36,4.58435) -- (9.36,4.43068) -- (9.52,4.43068) -- (9.52,4.83111) -- (9.68,4.83111) -- (9.68,4.65252) --
+ (9.84,4.65252) -- (9.84,4.13775) -- (10,4.13775) -- (10,4.01492) -- (10.16,4.01492) -- (10.16,4.01492) -- (10.32,4.01492) -- (10.32,3.87313) -- (10.48,3.87313) -- (10.48,4.43068) -- (10.64,4.43068) -- (10.64,4.2461) -- (10.8,4.2461) --
+ (10.8,4.43068) -- (10.96,4.43068) -- (10.96,4.43068) -- (11.12,4.43068) -- (11.12,4.51072) -- (11.28,4.51072) -- (11.28,4.65252) -- (11.44,4.65252) -- (11.44,4.71598) -- (11.6,4.71598) -- (11.6,4.58435) -- (11.76,4.58435) -- (11.76,4.13775) --
+ (11.92,4.13775) -- (11.92,3.23553) -- (12.08,3.23553) -- (12.08,3.70542) -- (12.24,3.70542) -- (12.24,6.98107) -- (12.4,6.98107) -- (12.4,2.86256) -- (12.56,2.86256) -- (12.56,3.23553) -- (12.72,3.23553) -- (12.72,4.13775) -- (12.88,4.13775) --
+ (12.88,3.23553) -- (13.04,3.23553) -- (13.04,3.87313) -- (13.2,3.87313) -- (13.2,3.87313) -- (13.36,3.87313) -- (13.36,4.13775) -- (13.52,4.13775) -- (13.52,3.70542) -- (13.68,3.70542) -- (13.68,4.83111) -- (13.84,4.83111) -- (13.84,5.35358) --
+ (14,5.35358) -- (14,5.52129) -- (14.16,5.52129) -- (14.16,5.76655) -- (14.32,5.76655) -- (14.32,5.80488) -- (14.48,5.80488) -- (14.48,5.61821) -- (14.64,5.61821) -- (14.64,5.35358) -- (14.8,5.35358) -- (14.8,5.06828) -- (14.96,5.06828) --
+ (14.96,5.22195) -- (15.12,5.22195) -- (15.12,5.18587) -- (15.28,5.18587) -- (15.28,5.25666) -- (15.44,5.25666) -- (15.44,5.14832) -- (15.6,5.14832) -- (15.6,4.71598) -- (15.76,4.71598) -- (15.76,2.86256) -- (15.92,2.86256) -- (15.92,1.09543) --
+ (16.08,1.09543) -- (16.08,1.09543) -- (16.24,1.09543) -- (16.24,1.09543) -- (16.4,1.09543) -- (16.4,1.09543) -- (16.56,1.09543) -- (16.56,1.09543) -- (16.72,1.09543) -- (16.72,1.09543) -- (16.88,1.09543) -- (16.88,1.09543) -- (17.04,1.09543) --
+ (17.04,1.09543) -- (17.2,1.09543) -- (17.2,1.09543) -- (17.36,1.09543) -- (17.36,1.09543) -- (17.52,1.09543) -- (17.52,1.09543) -- (17.68,1.09543) -- (17.68,1.09543) -- (17.84,1.09543) -- (17.84,1.09543) -- (18,1.09543);
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.08,9.22746) -- (2.08,9.24791);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.08,9.24791) -- (2.08,9.26791);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.08,9.24791)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.24,8.41497) -- (2.24,8.44677);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.24,8.44677) -- (2.24,8.47751);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.24,8.44677)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.4,7.91991) -- (2.4,7.96153);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.4,7.96153) -- (2.4,8.00135);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.4,7.96153)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.56,7.86686) -- (2.56,7.9097);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.56,7.9097) -- (2.56,7.95063);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.56,7.9097)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.72,7.24382) -- (2.72,7.30392);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.72,7.30392) -- (2.72,7.36033);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.72,7.30392)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.88,7.22461) -- (2.88,7.28533);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2.88,7.28533) -- (2.88,7.3423);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.88,7.28533)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.04,7.52145) -- (3.04,7.57313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.04,7.57313) -- (3.04,7.62207);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.04,7.57313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.2,6.71644) -- (3.2,6.79648);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.2,6.79648) -- (3.2,6.87011);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.2,6.79648)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.36,6.48261) -- (3.36,6.57348);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.36,6.57348) -- (3.36,6.65619);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.36,6.57348)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.52,6.36415) -- (3.52,6.46106);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.52,6.46106) -- (3.52,6.54873);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.52,6.46106)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.68,6.97208) -- (3.68,7.04174);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.68,7.04174) -- (3.68,7.1065);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.68,7.04174)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.84,6.02981) -- (3.84,6.14602);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (3.84,6.14602) -- (3.84,6.24918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.84,6.14602)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4,6.10935) -- (4,6.22064);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4,6.22064) -- (4,6.31992);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4,6.22064)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.16,5.91219) -- (4.16,6.03606);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.16,6.03606) -- (4.16,6.14521);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.16,6.03606)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.32,6.01588) -- (4.32,6.13297);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.32,6.13297) -- (4.32,6.23683);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.32,6.13297)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.48,6.00174) -- (4.48,6.11974);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.48,6.11974) -- (4.48,6.2243);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.48,6.11974)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.64,5.97282) -- (4.64,6.09268);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.64,6.09268) -- (4.64,6.19871);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.64,6.09268)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.8,5.7597) -- (4.8,5.89426);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.8,5.89426) -- (4.8,6.01162);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.8,5.89426)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.96,5.95802) -- (4.96,6.07885);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (4.96,6.07885) -- (4.96,6.18563);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.96,6.07885)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.12,6.09655) -- (5.12,6.20862);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.12,6.20862) -- (5.12,6.30851);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.12,6.20862)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.28,5.83051) -- (5.28,5.95999);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.28,5.95999) -- (5.28,6.07348);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.28,5.95999)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.44,7.292) -- (5.44,7.35055);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.44,7.35055) -- (5.44,7.40559);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.44,7.35055)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.6,5.81329) -- (5.6,5.94399);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.6,5.94399) -- (5.6,6.05841);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.6,5.94399)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.76,5.53253) -- (5.76,5.68473);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.76,5.68473) -- (5.76,5.81529);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.76,5.68473)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.92,5.64253) -- (5.92,5.78591);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (5.92,5.78591) -- (5.92,5.90994);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.92,5.78591)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.08,5.68321) -- (6.08,5.82347);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.08,5.82347) -- (6.08,5.94514);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.08,5.82347)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.24,5.66309) -- (6.24,5.80488);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.24,5.80488) -- (6.24,5.92771);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.24,5.80488)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.4,5.60004) -- (6.4,5.74677);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.4,5.74677) -- (6.4,5.87328);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.4,5.74677)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.56,5.95802) -- (6.56,6.07885);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.56,6.07885) -- (6.56,6.18563);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.56,6.07885)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.72,9.15013) -- (6.72,9.17146);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.72,9.17146) -- (6.72,9.1923);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.72,9.17146)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.88,3.39051) -- (6.88,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (6.88,3.87313) -- (6.88,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.88,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.04,3.73645) -- (7.04,4.13775);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.04,4.13775) -- (7.04,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.04,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.2,4.28555) -- (7.2,4.58435);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.2,4.58435) -- (7.2,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.2,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.36,3.16014) -- (7.36,3.70542);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.36,3.70542) -- (7.36,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.36,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.68,3.39051) -- (7.68,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.68,3.87313) -- (7.68,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.68,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.84,2.44334) -- (7.84,3.23553);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (7.84,3.23553) -- (7.84,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.84,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8,3.39051) -- (8,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8,3.87313) -- (8,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.16,2.86256) -- (8.16,3.50016);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.16,3.50016) -- (8.16,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.16,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.32,3.16014) -- (8.32,3.70542);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.32,3.70542) -- (8.32,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.32,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.48,3.16014) -- (8.48,3.70542);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.48,3.70542) -- (8.48,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.48,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.64,1.73302) -- (8.64,2.86256);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.64,2.86256) -- (8.64,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.64,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.8,1.73302) -- (8.8,2.86256);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.8,2.86256) -- (8.8,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.8,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.96,1.09543) -- (8.96,2.22496);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (8.96,2.22496) -- (8.96,2.86256);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.96,2.22496)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.12,3.73645) -- (9.12,4.13775);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.12,4.13775) -- (9.12,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.12,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.28,3.39051) -- (9.28,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.28,3.87313) -- (9.28,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.28,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.44,4.5756) -- (9.44,4.83111);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.44,4.83111) -- (9.44,5.03087);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.44,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.6,4.1974) -- (9.6,4.51072);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.6,4.51072) -- (9.6,4.74401);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.6,4.51072)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.76,3.73645) -- (9.76,4.13775);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.76,4.13775) -- (9.76,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.76,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.92,3.87313) -- (9.92,4.2461);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (9.92,4.2461) -- (9.92,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.92,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.08,2.86256) -- (10.08,3.50016);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.08,3.50016) -- (10.08,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.08,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.24,2.86256) -- (10.24,3.50016);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.24,3.50016) -- (10.24,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.24,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.4,3.39051) -- (10.4,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.4,3.87313) -- (10.4,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.4,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.56,3.57821) -- (10.56,4.01492);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.56,4.01492) -- (10.56,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.56,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.72,4.28555) -- (10.72,4.58435);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.72,4.58435) -- (10.72,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.72,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.88,3.39051) -- (10.88,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (10.88,3.87313) -- (10.88,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.88,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.04,4.28555) -- (11.04,4.58435);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.04,4.58435) -- (11.04,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.04,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.2,4.10061) -- (11.2,4.43068);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.2,4.43068) -- (11.2,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.2,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.36,4.28555) -- (11.36,4.58435);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.36,4.58435) -- (11.36,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.36,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.52,4.28555) -- (11.52,4.58435);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.52,4.58435) -- (11.52,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.52,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.68,3.57821) -- (11.68,4.01492);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.68,4.01492) -- (11.68,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.68,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.84,2.44334) -- (11.84,3.23553);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (11.84,3.23553) -- (11.84,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.84,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12,2.86256) -- (12,3.50016);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12,3.50016) -- (12,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.16,3.73645) -- (12.16,4.13775);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.16,4.13775) -- (12.16,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.16,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.32,7.02641) -- (12.32,7.09405);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.32,7.09405) -- (12.32,7.15705);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.32,7.09405)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.48,3.16014) -- (12.48,3.70542);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.48,3.70542) -- (12.48,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.48,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.64,3.39051) -- (12.64,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.64,3.87313) -- (12.64,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.64,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.8,2.44334) -- (12.8,3.23553);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.8,3.23553) -- (12.8,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.8,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.96,2.44334) -- (12.96,3.23553);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.96,3.23553) -- (12.96,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.96,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.12,3.39051) -- (13.12,3.87313);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.12,3.87313) -- (13.12,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.12,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.28,1.73302) -- (13.28,2.86256);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.28,2.86256) -- (13.28,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.28,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.44,2.44334) -- (13.44,3.23553);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.44,3.23553) -- (13.44,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.44,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.6,3.16014) -- (13.6,3.70542);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.6,3.70542) -- (13.6,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.6,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.76,4.36647) -- (13.76,4.65252);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.76,4.65252) -- (13.76,4.87039);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.76,4.65252)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.92,4.89407) -- (13.92,5.10917);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (13.92,5.10917) -- (13.92,5.28338);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.92,5.10917)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.08,5.64253) -- (14.08,5.78591);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.08,5.78591) -- (14.08,5.90994);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.08,5.78591)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.24,5.40821) -- (14.24,5.57102);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.24,5.57102) -- (14.24,5.70931);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.24,5.57102)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.4,5.50892) -- (14.4,5.66309);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.4,5.66309) -- (14.4,5.79508);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.4,5.66309)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.56,5.45989) -- (14.56,5.61821);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.56,5.61821) -- (14.56,5.75323);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.56,5.61821)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.72,5.26532) -- (14.72,5.44125);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.72,5.44125) -- (14.72,5.58887);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.72,5.44125)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.88,5.09744) -- (14.88,5.29012);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (14.88,5.29012) -- (14.88,5.44934);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.88,5.29012)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.04,4.69371) -- (15.04,4.93343);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.04,4.93343) -- (15.04,5.12341);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.04,4.93343)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.2,5.02114) -- (15.2,5.22195);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.2,5.22195) -- (15.2,5.38667);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.2,5.22195)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.36,5.06004) -- (15.36,5.25666);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.36,5.25666) -- (15.36,5.41857);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.36,5.25666)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.52,4.89407) -- (15.52,5.10917);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.52,5.10917) -- (15.52,5.28338);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.52,5.10917)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.68,4.10061) -- (15.68,4.43068);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.68,4.43068) -- (15.68,4.67309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.68,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.84,3.57821) -- (15.84,4.01492);
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (15.84,4.01492) -- (15.84,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.84,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (2,9.24791) -- (2.16,9.24791) -- (2.16,8.44677) -- (2.32,8.44677) -- (2.32,7.96153) -- (2.48,7.96153) -- (2.48,7.9097) -- (2.64,7.9097) -- (2.64,7.30392) -- (2.8,7.30392) -- (2.8,7.28533) --
+ (2.96,7.28533) -- (2.96,7.57313) -- (3.12,7.57313) -- (3.12,6.79648) -- (3.28,6.79648) -- (3.28,6.57348) -- (3.44,6.57348) -- (3.44,6.46106) -- (3.6,6.46106) -- (3.6,7.04174) -- (3.76,7.04174) -- (3.76,6.14602) -- (3.92,6.14602) -- (3.92,6.22064) --
+ (4.08,6.22064) -- (4.08,6.03606) -- (4.24,6.03606) -- (4.24,6.13297) -- (4.4,6.13297) -- (4.4,6.11974) -- (4.56,6.11974) -- (4.56,6.09268) -- (4.72,6.09268) -- (4.72,5.89426) -- (4.88,5.89426) -- (4.88,6.07885) -- (5.04,6.07885) -- (5.04,6.20862) --
+ (5.2,6.20862) -- (5.2,5.95999) -- (5.36,5.95999) -- (5.36,7.35055) -- (5.52,7.35055) -- (5.52,5.94399) -- (5.68,5.94399) -- (5.68,5.68473) -- (5.84,5.68473) -- (5.84,5.78591) -- (6,5.78591) -- (6,5.82347) -- (6.16,5.82347) -- (6.16,5.80488) --
+ (6.32,5.80488) -- (6.32,5.74677) -- (6.48,5.74677) -- (6.48,6.07885) -- (6.64,6.07885) -- (6.64,9.17146) -- (6.8,9.17146) -- (6.8,3.87313) -- (6.96,3.87313) -- (6.96,4.13775) -- (7.12,4.13775) -- (7.12,4.58435) -- (7.28,4.58435) -- (7.28,3.70542) --
+ (7.44,3.70542) -- (7.44,1.09543) -- (7.6,1.09543) -- (7.6,3.87313) -- (7.76,3.87313) -- (7.76,3.23553) -- (7.92,3.23553) -- (7.92,3.87313) -- (8.08,3.87313) -- (8.08,3.50016) -- (8.24,3.50016) -- (8.24,3.70542) -- (8.4,3.70542) -- (8.4,3.70542) --
+ (8.56,3.70542) -- (8.56,2.86256) -- (8.72,2.86256) -- (8.72,2.86256) -- (8.88,2.86256) -- (8.88,2.22496) -- (9.04,2.22496) -- (9.04,4.13775) -- (9.2,4.13775) -- (9.2,3.87313) -- (9.36,3.87313) -- (9.36,4.83111) -- (9.52,4.83111) -- (9.52,4.51072) --
+ (9.68,4.51072) -- (9.68,4.13775) -- (9.84,4.13775) -- (9.84,4.2461) -- (10,4.2461) -- (10,3.50016) -- (10.16,3.50016) -- (10.16,3.50016) -- (10.32,3.50016) -- (10.32,3.87313) -- (10.48,3.87313) -- (10.48,4.01492) -- (10.64,4.01492) --
+ (10.64,4.58435) -- (10.8,4.58435) -- (10.8,3.87313) -- (10.96,3.87313) -- (10.96,4.58435) -- (11.12,4.58435) -- (11.12,4.43068) -- (11.28,4.43068) -- (11.28,4.58435) -- (11.44,4.58435) -- (11.44,4.58435) -- (11.6,4.58435) -- (11.6,4.01492) --
+ (11.76,4.01492) -- (11.76,3.23553) -- (11.92,3.23553) -- (11.92,3.50016) -- (12.08,3.50016) -- (12.08,4.13775) -- (12.24,4.13775) -- (12.24,7.09405) -- (12.4,7.09405) -- (12.4,3.70542) -- (12.56,3.70542) -- (12.56,3.87313) -- (12.72,3.87313) --
+ (12.72,3.23553) -- (12.88,3.23553) -- (12.88,3.23553) -- (13.04,3.23553) -- (13.04,3.87313) -- (13.2,3.87313) -- (13.2,2.86256) -- (13.36,2.86256) -- (13.36,3.23553) -- (13.52,3.23553) -- (13.52,3.70542) -- (13.68,3.70542) -- (13.68,4.65252) --
+ (13.84,4.65252) -- (13.84,5.10917) -- (14,5.10917) -- (14,5.78591) -- (14.16,5.78591) -- (14.16,5.57102) -- (14.32,5.57102) -- (14.32,5.66309) -- (14.48,5.66309) -- (14.48,5.61821) -- (14.64,5.61821) -- (14.64,5.44125) -- (14.8,5.44125) --
+ (14.8,5.29012) -- (14.96,5.29012) -- (14.96,4.93343) -- (15.12,4.93343) -- (15.12,5.22195) -- (15.28,5.22195) -- (15.28,5.25666) -- (15.44,5.25666) -- (15.44,5.10917) -- (15.6,5.10917) -- (15.6,4.43068) -- (15.76,4.43068) -- (15.76,4.01492) --
+ (15.92,4.01492) -- (15.92,1.09543) -- (16.08,1.09543) -- (16.08,1.09543) -- (16.24,1.09543) -- (16.24,1.09543) -- (16.4,1.09543) -- (16.4,1.09543) -- (16.56,1.09543) -- (16.56,1.09543) -- (16.72,1.09543) -- (16.72,1.09543) -- (16.88,1.09543) --
+ (16.88,1.09543) -- (17.04,1.09543) -- (17.04,1.09543) -- (17.2,1.09543) -- (17.2,1.09543) -- (17.36,1.09543) -- (17.36,1.09543) -- (17.52,1.09543) -- (17.52,1.09543) -- (17.68,1.09543) -- (17.68,1.09543) -- (17.84,1.09543) -- (17.84,1.09543) --
+ (18,1.09543);
+\definecolor{c}{rgb}{0,0,0};
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.08,9.24527) -- (2.08,9.26552);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.08,9.26552) -- (2.08,9.28534);
+\foreach \P in {(2.08,9.26552)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.24,8.3707) -- (2.24,8.40327);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.24,8.40327) -- (2.24,8.43473);
+\foreach \P in {(2.24,8.40327)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.4,7.91807) -- (2.4,7.95973);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.4,7.95973) -- (2.4,7.99959);
+\foreach \P in {(2.4,7.95973)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.56,7.92359) -- (2.56,7.96513);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.56,7.96513) -- (2.56,8.00487);
+\foreach \P in {(2.56,7.96513)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.72,7.4042) -- (2.72,7.45928);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.72,7.45928) -- (2.72,7.51125);
+\foreach \P in {(2.72,7.45928)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.88,7.13503) -- (2.88,7.19879);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2.88,7.19879) -- (2.88,7.25841);
+\foreach \P in {(2.88,7.19879)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.04,7.57897) -- (3.04,7.62906);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.04,7.62906) -- (3.04,7.67656);
+\foreach \P in {(3.04,7.62906)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.2,6.46532) -- (3.2,6.55706);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.2,6.55706) -- (3.2,6.64047);
+\foreach \P in {(3.2,6.55706)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.36,6.26168) -- (3.36,6.36415);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.36,6.36415) -- (3.36,6.45633);
+\foreach \P in {(3.36,6.36415)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.52,6.45656) -- (3.52,6.54873);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.52,6.54873) -- (3.52,6.63251);
+\foreach \P in {(3.52,6.54873)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.68,6.97208) -- (3.68,7.04174);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.68,7.04174) -- (3.68,7.1065);
+\foreach \P in {(3.68,7.04174)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.84,5.97282) -- (3.84,6.09268);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (3.84,6.09268) -- (3.84,6.19871);
+\foreach \P in {(3.84,6.09268)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4,6.10935) -- (4,6.22064);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4,6.22064) -- (4,6.31992);
+\foreach \P in {(4,6.22064)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.16,5.81329) -- (4.16,5.94399);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.16,5.94399) -- (4.16,6.05841);
+\foreach \P in {(4.16,5.94399)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.32,6.09655) -- (4.32,6.20862);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.32,6.20862) -- (4.32,6.30851);
+\foreach \P in {(4.32,6.20862)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.48,5.97282) -- (4.48,6.09268);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.48,6.09268) -- (4.48,6.19871);
+\foreach \P in {(4.48,6.09268)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.64,5.68321) -- (4.64,5.82347);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.64,5.82347) -- (4.64,5.94514);
+\foreach \P in {(4.64,5.82347)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.8,5.98739) -- (4.8,6.10631);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.8,6.10631) -- (4.8,6.21159);
+\foreach \P in {(4.8,6.10631)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.96,5.70292) -- (4.96,5.84168);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (4.96,5.84168) -- (4.96,5.96223);
+\foreach \P in {(4.96,5.84168)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.12,5.92771) -- (5.12,6.05054);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.12,6.05054) -- (5.12,6.15889);
+\foreach \P in {(5.12,6.05054)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.28,5.86403) -- (5.28,5.99118);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.28,5.99118) -- (5.28,6.10286);
+\foreach \P in {(5.28,5.99118)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.44,7.26265) -- (5.44,7.32213);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.44,7.32213) -- (5.44,7.37801);
+\foreach \P in {(5.44,7.32213)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.6,5.60004) -- (5.6,5.74677);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.6,5.74677) -- (5.6,5.87328);
+\foreach \P in {(5.6,5.74677)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.76,5.7597) -- (5.76,5.89426);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.76,5.89426) -- (5.76,6.01162);
+\foreach \P in {(5.76,5.89426)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.92,5.66309) -- (5.92,5.80488);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (5.92,5.80488) -- (5.92,5.92771);
+\foreach \P in {(5.92,5.80488)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.08,5.53253) -- (6.08,5.68473);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.08,5.68473) -- (6.08,5.81529);
+\foreach \P in {(6.08,5.68473)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.24,5.23401) -- (6.24,5.41295);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.24,5.41295) -- (6.24,5.56268);
+\foreach \P in {(6.24,5.41295)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.4,5.84741) -- (6.4,5.97572);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.4,5.97572) -- (6.4,6.08829);
+\foreach \P in {(6.4,5.97572)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.56,6.15889) -- (6.56,6.26723);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.56,6.26723) -- (6.56,6.36415);
+\foreach \P in {(6.56,6.26723)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.72,9.17521) -- (6.72,9.19624);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.72,9.19624) -- (6.72,9.21681);
+\foreach \P in {(6.72,9.19624)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.88,3.73645) -- (6.88,4.13775);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (6.88,4.13775) -- (6.88,4.41622);
+\foreach \P in {(6.88,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.04,1.73302) -- (7.04,2.86256);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.04,2.86256) -- (7.04,3.3545);
+\foreach \P in {(7.04,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.2,4.10061) -- (7.2,4.43068);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.2,4.43068) -- (7.2,4.67309);
+\foreach \P in {(7.2,4.43068)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.36,2.44334) -- (7.36,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.36,3.23553) -- (7.36,3.65475);
+\foreach \P in {(7.36,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.52,2.44334) -- (7.52,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.52,3.23553) -- (7.52,3.65475);
+\foreach \P in {(7.52,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.68,2.44334) -- (7.68,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.68,3.23553) -- (7.68,3.65475);
+\foreach \P in {(7.68,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.84,3.73645) -- (7.84,4.13775);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (7.84,4.13775) -- (7.84,4.41622);
+\foreach \P in {(7.84,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8,2.44334) -- (8,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8,3.23553) -- (8,3.65475);
+\foreach \P in {(8,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.16,3.16014) -- (8.16,3.70542);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.16,3.70542) -- (8.16,4.04543);
+\foreach \P in {(8.16,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.32,2.44334) -- (8.32,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.32,3.23553) -- (8.32,3.65475);
+\foreach \P in {(8.32,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.48,2.86256) -- (8.48,3.50016);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.48,3.50016) -- (8.48,3.87313);
+\foreach \P in {(8.48,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.64,2.44334) -- (8.64,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.64,3.23553) -- (8.64,3.65475);
+\foreach \P in {(8.64,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.8,1.73302) -- (8.8,2.86256);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.8,2.86256) -- (8.8,3.3545);
+\foreach \P in {(8.8,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.96,2.86256) -- (8.96,3.50016);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (8.96,3.50016) -- (8.96,3.87313);
+\foreach \P in {(8.96,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.12,3.16014) -- (9.12,3.70542);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.12,3.70542) -- (9.12,4.04543);
+\foreach \P in {(9.12,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.28,3.73645) -- (9.28,4.13775);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.28,4.13775) -- (9.28,4.41622);
+\foreach \P in {(9.28,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.44,4.44125) -- (9.44,4.71598);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.44,4.71598) -- (9.44,4.92726);
+\foreach \P in {(9.44,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.6,4.44125) -- (9.6,4.71598);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.6,4.71598) -- (9.6,4.92726);
+\foreach \P in {(9.6,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.76,3.87313) -- (9.76,4.2461);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.76,4.2461) -- (9.76,4.51072);
+\foreach \P in {(9.76,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.92,4.1974) -- (9.92,4.51072);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (9.92,4.51072) -- (9.92,4.74401);
+\foreach \P in {(9.92,4.51072)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.08,3.87313) -- (10.08,4.2461);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.08,4.2461) -- (10.08,4.51072);
+\foreach \P in {(10.08,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.24,3.16014) -- (10.24,3.70542);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.24,3.70542) -- (10.24,4.04543);
+\foreach \P in {(10.24,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.4,3.39051) -- (10.4,3.87313);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.4,3.87313) -- (10.4,4.18804);
+\foreach \P in {(10.4,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.56,3.39051) -- (10.56,3.87313);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.56,3.87313) -- (10.56,4.18804);
+\foreach \P in {(10.56,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.72,3.39051) -- (10.72,3.87313);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.72,3.87313) -- (10.72,4.18804);
+\foreach \P in {(10.72,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.88,4.44125) -- (10.88,4.71598);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (10.88,4.71598) -- (10.88,4.92726);
+\foreach \P in {(10.88,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.04,4.44125) -- (11.04,4.71598);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.04,4.71598) -- (11.04,4.92726);
+\foreach \P in {(11.04,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.2,4.51072) -- (11.2,4.77535);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.2,4.77535) -- (11.2,4.98061);
+\foreach \P in {(11.2,4.77535)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.36,4.5756) -- (11.36,4.83111);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.36,4.83111) -- (11.36,5.03087);
+\foreach \P in {(11.36,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.52,4.44125) -- (11.52,4.71598);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.52,4.71598) -- (11.52,4.92726);
+\foreach \P in {(11.52,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.68,3.16014) -- (11.68,3.70542);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.68,3.70542) -- (11.68,4.04543);
+\foreach \P in {(11.68,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.84,1.73302) -- (11.84,2.86256);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (11.84,2.86256) -- (11.84,3.3545);
+\foreach \P in {(11.84,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12,2.44334) -- (12,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12,3.23553) -- (12,3.65475);
+\foreach \P in {(12,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.16,3.39051) -- (12.16,3.87313);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.16,3.87313) -- (12.16,4.18804);
+\foreach \P in {(12.16,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.32,6.9567) -- (12.32,7.02694);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.32,7.02694) -- (12.32,7.0922);
+\foreach \P in {(12.32,7.02694)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.48,3.16014) -- (12.48,3.70542);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.48,3.70542) -- (12.48,4.04543);
+\foreach \P in {(12.48,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.64,2.44334) -- (12.64,3.23553);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.64,3.23553) -- (12.64,3.65475);
+\foreach \P in {(12.64,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.8,2.86256) -- (12.8,3.50016);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.8,3.50016) -- (12.8,3.87313);
+\foreach \P in {(12.8,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.96,1.73302) -- (12.96,2.86256);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.96,2.86256) -- (12.96,3.3545);
+\foreach \P in {(12.96,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.12,3.57821) -- (13.12,4.01492);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.12,4.01492) -- (13.12,4.30984);
+\foreach \P in {(13.12,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.28,3.16014) -- (13.28,3.70542);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.28,3.70542) -- (13.28,4.04543);
+\foreach \P in {(13.28,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.44,3.87313) -- (13.44,4.2461);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.44,4.2461) -- (13.44,4.51072);
+\foreach \P in {(13.44,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.6,1.73302) -- (13.6,2.86256);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.6,2.86256) -- (13.6,3.3545);
+\foreach \P in {(13.6,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.76,4.5756) -- (13.76,4.83111);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.76,4.83111) -- (13.76,5.03087);
+\foreach \P in {(13.76,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.92,4.98061) -- (13.92,5.18587);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (13.92,5.18587) -- (13.92,5.35358);
+\foreach \P in {(13.92,5.18587)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.08,5.35358) -- (14.08,5.52129);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.08,5.52129) -- (14.08,5.66309);
+\foreach \P in {(14.08,5.52129)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.24,5.4344) -- (14.24,5.59492);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.24,5.59492) -- (14.24,5.73154);
+\foreach \P in {(14.24,5.59492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.4,5.74115) -- (14.4,5.87706);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.4,5.87706) -- (14.4,5.99546);
+\foreach \P in {(14.4,5.87706)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.56,5.4344) -- (14.56,5.59492);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.56,5.59492) -- (14.56,5.73154);
+\foreach \P in {(14.56,5.59492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.72,5.02114) -- (14.72,5.22195);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.72,5.22195) -- (14.72,5.38667);
+\foreach \P in {(14.72,5.22195)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.88,5.02114) -- (14.88,5.22195);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (14.88,5.22195) -- (14.88,5.38667);
+\foreach \P in {(14.88,5.22195)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.04,4.84772) -- (15.04,5.06828);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.04,5.06828) -- (15.04,5.24605);
+\foreach \P in {(15.04,5.06828)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.2,4.9383) -- (15.2,5.14832);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.2,5.14832) -- (15.2,5.31918);
+\foreach \P in {(15.2,5.14832)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.36,4.84772) -- (15.36,5.06828);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.36,5.06828) -- (15.36,5.24605);
+\foreach \P in {(15.36,5.06828)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.52,4.84772) -- (15.52,5.06828);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.52,5.06828) -- (15.52,5.24605);
+\foreach \P in {(15.52,5.06828)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.68,3.57821) -- (15.68,4.01492);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.68,4.01492) -- (15.68,4.30984);
+\foreach \P in {(15.68,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.84,2.86256) -- (15.84,3.50016);
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (15.84,3.50016) -- (15.84,3.87313);
+\foreach \P in {(15.84,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (2,9.26552) -- (2.16,9.26552) -- (2.16,8.40327) -- (2.32,8.40327) -- (2.32,7.95973) -- (2.48,7.95973) -- (2.48,7.96513) -- (2.64,7.96513) -- (2.64,7.45928) --
+ (2.8,7.45928) -- (2.8,7.19879) -- (2.96,7.19879) -- (2.96,7.62906) -- (3.12,7.62906) -- (3.12,6.55706) -- (3.28,6.55706) -- (3.28,6.36415) -- (3.44,6.36415) -- (3.44,6.54873) -- (3.6,6.54873) -- (3.6,7.04174) -- (3.76,7.04174) -- (3.76,6.09268) --
+ (3.92,6.09268) -- (3.92,6.22064) -- (4.08,6.22064) -- (4.08,5.94399) -- (4.24,5.94399) -- (4.24,6.20862) -- (4.4,6.20862) -- (4.4,6.09268) -- (4.56,6.09268) -- (4.56,5.82347) -- (4.72,5.82347) -- (4.72,6.10631) -- (4.88,6.10631) -- (4.88,5.84168) --
+ (5.04,5.84168) -- (5.04,6.05054) -- (5.2,6.05054) -- (5.2,5.99118) -- (5.36,5.99118) -- (5.36,7.32213) -- (5.52,7.32213) -- (5.52,5.74677) -- (5.68,5.74677) -- (5.68,5.89426) -- (5.84,5.89426) -- (5.84,5.80488) -- (6,5.80488) -- (6,5.68473) --
+ (6.16,5.68473) -- (6.16,5.41295) -- (6.32,5.41295) -- (6.32,5.97572) -- (6.48,5.97572) -- (6.48,6.26723) -- (6.64,6.26723) -- (6.64,9.19624) -- (6.8,9.19624) -- (6.8,4.13775) -- (6.96,4.13775) -- (6.96,2.86256) -- (7.12,2.86256) -- (7.12,4.43068) --
+ (7.28,4.43068) -- (7.28,3.23553) -- (7.44,3.23553) -- (7.44,3.23553) -- (7.6,3.23553) -- (7.6,3.23553) -- (7.76,3.23553) -- (7.76,4.13775) -- (7.92,4.13775) -- (7.92,3.23553) -- (8.08,3.23553) -- (8.08,3.70542) -- (8.24,3.70542) -- (8.24,3.23553) --
+ (8.4,3.23553) -- (8.4,3.50016) -- (8.56,3.50016) -- (8.56,3.23553) -- (8.72,3.23553) -- (8.72,2.86256) -- (8.88,2.86256) -- (8.88,3.50016) -- (9.04,3.50016) -- (9.04,3.70542) -- (9.2,3.70542) -- (9.2,4.13775) -- (9.36,4.13775) -- (9.36,4.71598) --
+ (9.52,4.71598) -- (9.52,4.71598) -- (9.68,4.71598) -- (9.68,4.2461) -- (9.84,4.2461) -- (9.84,4.51072) -- (10,4.51072) -- (10,4.2461) -- (10.16,4.2461) -- (10.16,3.70542) -- (10.32,3.70542) -- (10.32,3.87313) -- (10.48,3.87313) -- (10.48,3.87313) --
+ (10.64,3.87313) -- (10.64,3.87313) -- (10.8,3.87313) -- (10.8,4.71598) -- (10.96,4.71598) -- (10.96,4.71598) -- (11.12,4.71598) -- (11.12,4.77535) -- (11.28,4.77535) -- (11.28,4.83111) -- (11.44,4.83111) -- (11.44,4.71598) -- (11.6,4.71598) --
+ (11.6,3.70542) -- (11.76,3.70542) -- (11.76,2.86256) -- (11.92,2.86256) -- (11.92,3.23553) -- (12.08,3.23553) -- (12.08,3.87313) -- (12.24,3.87313) -- (12.24,7.02694) -- (12.4,7.02694) -- (12.4,3.70542) -- (12.56,3.70542) -- (12.56,3.23553) --
+ (12.72,3.23553) -- (12.72,3.50016) -- (12.88,3.50016) -- (12.88,2.86256) -- (13.04,2.86256) -- (13.04,4.01492) -- (13.2,4.01492) -- (13.2,3.70542) -- (13.36,3.70542) -- (13.36,4.2461) -- (13.52,4.2461) -- (13.52,2.86256) -- (13.68,2.86256) --
+ (13.68,4.83111) -- (13.84,4.83111) -- (13.84,5.18587) -- (14,5.18587) -- (14,5.52129) -- (14.16,5.52129) -- (14.16,5.59492) -- (14.32,5.59492) -- (14.32,5.87706) -- (14.48,5.87706) -- (14.48,5.59492) -- (14.64,5.59492) -- (14.64,5.22195) --
+ (14.8,5.22195) -- (14.8,5.22195) -- (14.96,5.22195) -- (14.96,5.06828) -- (15.12,5.06828) -- (15.12,5.14832) -- (15.28,5.14832) -- (15.28,5.06828) -- (15.44,5.06828) -- (15.44,5.06828) -- (15.6,5.06828) -- (15.6,4.01492) -- (15.76,4.01492) --
+ (15.76,3.50016) -- (15.92,3.50016) -- (15.92,1.09543) -- (16.08,1.09543) -- (16.08,1.09543) -- (16.24,1.09543) -- (16.24,1.09543) -- (16.4,1.09543) -- (16.4,1.09543) -- (16.56,1.09543) -- (16.56,1.09543) -- (16.72,1.09543) -- (16.72,1.09543) --
+ (16.88,1.09543) -- (16.88,1.09543) -- (17.04,1.09543) -- (17.04,1.09543) -- (17.2,1.09543) -- (17.2,1.09543) -- (17.36,1.09543) -- (17.36,1.09543) -- (17.52,1.09543) -- (17.52,1.09543) -- (17.68,1.09543) -- (17.68,1.09543) -- (17.84,1.09543) --
+ (17.84,1.09543) -- (18,1.09543);
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.08,9.19171) -- (2.08,9.21256);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.08,9.21256) -- (2.08,9.23295);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.08,9.21256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.24,8.33133) -- (2.24,8.36461);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.24,8.36461) -- (2.24,8.39672);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.24,8.36461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.4,7.91807) -- (2.4,7.95973);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.4,7.95973) -- (2.4,7.99959);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.4,7.95973)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.56,7.86686) -- (2.56,7.9097);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.56,7.9097) -- (2.56,7.95063);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.56,7.9097)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.72,7.21288) -- (2.72,7.274);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.72,7.274) -- (2.72,7.33131);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.72,7.274)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.88,7.13929) -- (2.88,7.2029);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2.88,7.2029) -- (2.88,7.2624);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(2.88,7.2029)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.04,7.58953) -- (3.04,7.63934);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.04,7.63934) -- (3.04,7.68658);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.04,7.63934)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.2,6.73627) -- (3.2,6.81545);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.2,6.81545) -- (3.2,6.88835);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.2,6.81545)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.36,6.45656) -- (3.36,6.54873);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.36,6.54873) -- (3.36,6.63251);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.36,6.54873)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.52,6.50795) -- (3.52,6.59759);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.52,6.59759) -- (3.52,6.67926);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.52,6.59759)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.68,7.12645) -- (3.68,7.1905);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.68,7.1905) -- (3.68,7.25039);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.68,7.1905)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.84,5.88035) -- (3.84,6.00638);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (3.84,6.00638) -- (3.84,6.1172);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(3.84,6.00638)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4,5.95802) -- (4,6.07885);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4,6.07885) -- (4,6.18563);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4,6.07885)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.16,5.98739) -- (4.16,6.10631);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.16,6.10631) -- (4.16,6.21159);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.16,6.10631)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.32,5.7779) -- (4.32,5.91114);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.32,5.91114) -- (4.32,6.02749);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.32,5.91114)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.48,5.94299) -- (4.48,6.0648);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.48,6.0648) -- (4.48,6.17236);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.48,6.0648)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.64,5.8964) -- (4.64,6.02134);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.64,6.02134) -- (4.64,6.13131);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.64,6.02134)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.8,5.97282) -- (4.8,6.09268);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.8,6.09268) -- (4.8,6.19871);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.8,6.09268)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.96,5.70292) -- (4.96,5.84168);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (4.96,5.84168) -- (4.96,5.96223);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(4.96,5.84168)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.12,6.12198) -- (5.12,6.23251);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.12,6.23251) -- (5.12,6.33118);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.12,6.23251)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.28,5.92771) -- (5.28,6.05054);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.28,6.05054) -- (5.28,6.15889);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.28,6.05054)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.44,7.29561) -- (5.44,7.35404);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.44,7.35404) -- (5.44,7.40898);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.44,7.35404)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.6,5.48472) -- (5.6,5.64092);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.6,5.64092) -- (5.6,5.77441);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.6,5.64092)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.76,5.79576) -- (5.76,5.92771);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.76,5.92771) -- (5.76,6.04309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.76,5.92771)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.92,5.53253) -- (5.92,5.68473);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (5.92,5.68473) -- (5.92,5.81529);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(5.92,5.68473)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.08,5.48472) -- (6.08,5.64092);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.08,5.64092) -- (6.08,5.77441);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.08,5.64092)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.24,5.35358) -- (6.24,5.52129);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.24,5.52129) -- (6.24,5.66309);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.24,5.52129)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.4,5.50892) -- (6.4,5.66309);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.4,5.66309) -- (6.4,5.79508);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.4,5.66309)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.56,6.2508) -- (6.56,6.35387);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.56,6.35387) -- (6.56,6.44654);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.56,6.35387)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.72,9.15549) -- (6.72,9.17676);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.72,9.17676) -- (6.72,9.19754);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.72,9.17676)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.88,3.57821) -- (6.88,4.01492);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (6.88,4.01492) -- (6.88,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(6.88,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.04,3.16014) -- (7.04,3.70542);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.04,3.70542) -- (7.04,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.04,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.2,4.36647) -- (7.2,4.65252);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.2,4.65252) -- (7.2,4.87039);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.2,4.65252)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.36,3.99335) -- (7.36,4.34301);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.36,4.34301) -- (7.36,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.36,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.52,2.44334) -- (7.52,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.52,3.23553) -- (7.52,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.52,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.68,2.44334) -- (7.68,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.68,3.23553) -- (7.68,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.68,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.84,2.86256) -- (7.84,3.50016);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (7.84,3.50016) -- (7.84,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(7.84,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8,3.73645) -- (8,4.13775);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8,4.13775) -- (8,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.16,2.44334) -- (8.16,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.16,3.23553) -- (8.16,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.16,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.32,1.73302) -- (8.32,2.86256);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.32,2.86256) -- (8.32,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.32,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.48,1.73302) -- (8.48,2.86256);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.48,2.86256) -- (8.48,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.48,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.64,3.39051) -- (8.64,3.87313);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.64,3.87313) -- (8.64,4.18804);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.64,3.87313)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.8,3.16014) -- (8.8,3.70542);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.8,3.70542) -- (8.8,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.8,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.96,1.73302) -- (8.96,2.86256);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (8.96,2.86256) -- (8.96,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(8.96,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.12,3.73645) -- (9.12,4.13775);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.12,4.13775) -- (9.12,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.12,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.28,3.99335) -- (9.28,4.34301);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.28,4.34301) -- (9.28,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.28,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.44,4.5756) -- (9.44,4.83111);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.44,4.83111) -- (9.44,5.03087);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.44,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.6,4.28555) -- (9.6,4.58435);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.6,4.58435) -- (9.6,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.6,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.76,3.87313) -- (9.76,4.2461);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.76,4.2461) -- (9.76,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.76,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.92,3.57821) -- (9.92,4.01492);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (9.92,4.01492) -- (9.92,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(9.92,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.08,3.57821) -- (10.08,4.01492);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.08,4.01492) -- (10.08,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.08,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.24,3.16014) -- (10.24,3.70542);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.24,3.70542) -- (10.24,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.24,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.4,3.16014) -- (10.4,3.70542);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.4,3.70542) -- (10.4,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.4,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.56,3.87313) -- (10.56,4.2461);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.56,4.2461) -- (10.56,4.51072);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.56,4.2461)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.72,3.57821) -- (10.72,4.01492);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.72,4.01492) -- (10.72,4.30984);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.72,4.01492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.88,4.44125) -- (10.88,4.71598);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (10.88,4.71598) -- (10.88,4.92726);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(10.88,4.71598)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.04,4.89407) -- (11.04,5.10917);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.04,5.10917) -- (11.04,5.28338);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.04,5.10917)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.2,4.9383) -- (11.2,5.14832);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.2,5.14832) -- (11.2,5.31918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.2,5.14832)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.36,4.5756) -- (11.36,4.83111);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.36,4.83111) -- (11.36,5.03087);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.36,4.83111)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.52,4.28555) -- (11.52,4.58435);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.52,4.58435) -- (11.52,4.80952);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.52,4.58435)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.68,3.16014) -- (11.68,3.70542);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.68,3.70542) -- (11.68,4.04543);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.68,3.70542)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.84,1.73302) -- (11.84,2.86256);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (11.84,2.86256) -- (11.84,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(11.84,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12,2.86256) -- (12,3.50016);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12,3.50016) -- (12,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.16,1.73302) -- (12.16,2.86256);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.16,2.86256) -- (12.16,3.3545);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.16,2.86256)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.32,6.87576) -- (12.32,6.94916);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.32,6.94916) -- (12.32,7.01714);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.32,6.94916)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.48,2.44334) -- (12.48,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.48,3.23553) -- (12.48,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.48,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.64,2.44334) -- (12.64,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.64,3.23553) -- (12.64,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.64,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.8,2.44334) -- (12.8,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.8,3.23553) -- (12.8,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.8,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.96,2.44334) -- (12.96,3.23553);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.96,3.23553) -- (12.96,3.65475);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(12.96,3.23553)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.12,2.86256) -- (13.12,3.50016);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.12,3.50016) -- (13.12,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.12,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.28,1.09543) -- (13.28,2.22496);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.28,2.22496) -- (13.28,2.86256);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.28,2.22496)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.44,3.99335) -- (13.44,4.34301);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.44,4.34301) -- (13.44,4.59576);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.44,4.34301)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.6,3.73645) -- (13.6,4.13775);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.6,4.13775) -- (13.6,4.41622);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.6,4.13775)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.76,4.36647) -- (13.76,4.65252);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.76,4.65252) -- (13.76,4.87039);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.76,4.65252)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.92,4.89407) -- (13.92,5.10917);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (13.92,5.10917) -- (13.92,5.28338);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.92,5.10917)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.08,5.38128) -- (14.08,5.54649);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.08,5.54649) -- (14.08,5.6865);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.08,5.54649)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.24,5.55556) -- (14.24,5.70588);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.24,5.70588) -- (14.24,5.83504);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.24,5.70588)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.4,5.68321) -- (14.4,5.82347);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.4,5.82347) -- (14.4,5.94514);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.4,5.82347)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.56,5.4344) -- (14.56,5.59492);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.56,5.59492) -- (14.56,5.73154);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.56,5.59492)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.72,5.48472) -- (14.72,5.64092);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.72,5.64092) -- (14.72,5.77441);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.72,5.64092)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.88,5.13344) -- (14.88,5.32239);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (14.88,5.32239) -- (14.88,5.47907);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(14.88,5.32239)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.04,4.7478) -- (15.04,4.98061);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.04,4.98061) -- (15.04,5.16624);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.04,4.98061)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.2,5.23401) -- (15.2,5.41295);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.2,5.41295) -- (15.2,5.56268);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.2,5.41295)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.36,4.89407) -- (15.36,5.10917);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.36,5.10917) -- (15.36,5.28338);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.36,5.10917)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.52,4.9383) -- (15.52,5.14832);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.52,5.14832) -- (15.52,5.31918);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.52,5.14832)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.68,4.7478) -- (15.68,4.98061);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.68,4.98061) -- (15.68,5.16624);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.68,4.98061)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.84,2.86256) -- (15.84,3.50016);
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (15.84,3.50016) -- (15.84,3.87313);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(15.84,3.50016)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (2,9.21256) -- (2.16,9.21256) -- (2.16,8.36461) -- (2.32,8.36461) -- (2.32,7.95973) -- (2.48,7.95973) -- (2.48,7.9097) -- (2.64,7.9097) -- (2.64,7.274) -- (2.8,7.274)
+ -- (2.8,7.2029) -- (2.96,7.2029) -- (2.96,7.63934) -- (3.12,7.63934) -- (3.12,6.81545) -- (3.28,6.81545) -- (3.28,6.54873) -- (3.44,6.54873) -- (3.44,6.59759) -- (3.6,6.59759) -- (3.6,7.1905) -- (3.76,7.1905) -- (3.76,6.00638) -- (3.92,6.00638) --
+ (3.92,6.07885) -- (4.08,6.07885) -- (4.08,6.10631) -- (4.24,6.10631) -- (4.24,5.91114) -- (4.4,5.91114) -- (4.4,6.0648) -- (4.56,6.0648) -- (4.56,6.02134) -- (4.72,6.02134) -- (4.72,6.09268) -- (4.88,6.09268) -- (4.88,5.84168) -- (5.04,5.84168) --
+ (5.04,6.23251) -- (5.2,6.23251) -- (5.2,6.05054) -- (5.36,6.05054) -- (5.36,7.35404) -- (5.52,7.35404) -- (5.52,5.64092) -- (5.68,5.64092) -- (5.68,5.92771) -- (5.84,5.92771) -- (5.84,5.68473) -- (6,5.68473) -- (6,5.64092) -- (6.16,5.64092) --
+ (6.16,5.52129) -- (6.32,5.52129) -- (6.32,5.66309) -- (6.48,5.66309) -- (6.48,6.35387) -- (6.64,6.35387) -- (6.64,9.17676) -- (6.8,9.17676) -- (6.8,4.01492) -- (6.96,4.01492) -- (6.96,3.70542) -- (7.12,3.70542) -- (7.12,4.65252) -- (7.28,4.65252) --
+ (7.28,4.34301) -- (7.44,4.34301) -- (7.44,3.23553) -- (7.6,3.23553) -- (7.6,3.23553) -- (7.76,3.23553) -- (7.76,3.50016) -- (7.92,3.50016) -- (7.92,4.13775) -- (8.08,4.13775) -- (8.08,3.23553) -- (8.24,3.23553) -- (8.24,2.86256) -- (8.4,2.86256) --
+ (8.4,2.86256) -- (8.56,2.86256) -- (8.56,3.87313) -- (8.72,3.87313) -- (8.72,3.70542) -- (8.88,3.70542) -- (8.88,2.86256) -- (9.04,2.86256) -- (9.04,4.13775) -- (9.2,4.13775) -- (9.2,4.34301) -- (9.36,4.34301) -- (9.36,4.83111) -- (9.52,4.83111) --
+ (9.52,4.58435) -- (9.68,4.58435) -- (9.68,4.2461) -- (9.84,4.2461) -- (9.84,4.01492) -- (10,4.01492) -- (10,4.01492) -- (10.16,4.01492) -- (10.16,3.70542) -- (10.32,3.70542) -- (10.32,3.70542) -- (10.48,3.70542) -- (10.48,4.2461) -- (10.64,4.2461)
+ -- (10.64,4.01492) -- (10.8,4.01492) -- (10.8,4.71598) -- (10.96,4.71598) -- (10.96,5.10917) -- (11.12,5.10917) -- (11.12,5.14832) -- (11.28,5.14832) -- (11.28,4.83111) -- (11.44,4.83111) -- (11.44,4.58435) -- (11.6,4.58435) -- (11.6,3.70542) --
+ (11.76,3.70542) -- (11.76,2.86256) -- (11.92,2.86256) -- (11.92,3.50016) -- (12.08,3.50016) -- (12.08,2.86256) -- (12.24,2.86256) -- (12.24,6.94916) -- (12.4,6.94916) -- (12.4,3.23553) -- (12.56,3.23553) -- (12.56,3.23553) -- (12.72,3.23553) --
+ (12.72,3.23553) -- (12.88,3.23553) -- (12.88,3.23553) -- (13.04,3.23553) -- (13.04,3.50016) -- (13.2,3.50016) -- (13.2,2.22496) -- (13.36,2.22496) -- (13.36,4.34301) -- (13.52,4.34301) -- (13.52,4.13775) -- (13.68,4.13775) -- (13.68,4.65252) --
+ (13.84,4.65252) -- (13.84,5.10917) -- (14,5.10917) -- (14,5.54649) -- (14.16,5.54649) -- (14.16,5.70588) -- (14.32,5.70588) -- (14.32,5.82347) -- (14.48,5.82347) -- (14.48,5.59492) -- (14.64,5.59492) -- (14.64,5.64092) -- (14.8,5.64092) --
+ (14.8,5.32239) -- (14.96,5.32239) -- (14.96,4.98061) -- (15.12,4.98061) -- (15.12,5.41295) -- (15.28,5.41295) -- (15.28,5.10917) -- (15.44,5.10917) -- (15.44,5.14832) -- (15.6,5.14832) -- (15.6,4.98061) -- (15.76,4.98061) -- (15.76,3.50016) --
+ (15.92,3.50016) -- (15.92,1.09543) -- (16.08,1.09543) -- (16.08,1.09543) -- (16.24,1.09543) -- (16.24,1.09543) -- (16.4,1.09543) -- (16.4,1.09543) -- (16.56,1.09543) -- (16.56,1.09543) -- (16.72,1.09543) -- (16.72,1.09543) -- (16.88,1.09543) --
+ (16.88,1.09543) -- (17.04,1.09543) -- (17.04,1.09543) -- (17.2,1.09543) -- (17.2,1.09543) -- (17.36,1.09543) -- (17.36,1.09543) -- (17.52,1.09543) -- (17.52,1.09543) -- (17.68,1.09543) -- (17.68,1.09543) -- (17.84,1.09543) -- (17.84,1.09543) --
+ (18,1.09543);
+\definecolor{c}{rgb}{1,1,1};
+\draw [color=c, fill=c] (12.7634,6.52087) rectangle (17.8131,9.76143);
+\definecolor{c}{rgb}{0,0,0};
+\draw [c,line width=0.9] (12.7634,6.52087) -- (17.8131,6.52087);
+\draw [c,line width=0.9] (17.8131,6.52087) -- (17.8131,9.76143);
+\draw [c,line width=0.9] (17.8131,9.76143) -- (12.7634,9.76143);
+\draw [c,line width=0.9] (12.7634,9.76143) -- (12.7634,6.52087);
+\draw [anchor=base west] (14.0258,9.29155) node[scale=1.14802, color=c, rotate=0]{MTwister};
+\definecolor{c}{rgb}{1,1,1};
+\draw [c] (12.9528,9.21054) -- (13.8365,9.21054) -- (13.8365,9.66421) -- (12.9528,9.66421);
+\definecolor{c}{rgb}{1,0,0};
+\draw [c,line width=2.7] (12.9528,9.43738) -- (13.8365,9.43738);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.3946,9.43738)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [anchor=base west] (14.0258,8.64344) node[scale=1.14802, color=c, rotate=0]{MixMax};
+\definecolor{c}{rgb}{1,1,1};
+\draw [c] (12.9528,8.56243) -- (13.8365,8.56243) -- (13.8365,9.0161) -- (12.9528,9.0161);
+\definecolor{c}{rgb}{0,0,1};
+\draw [c,line width=2.7] (12.9528,8.78926) -- (13.8365,8.78926);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.3946,8.78926)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [anchor=base west] (14.0258,7.99533) node[scale=1.14802, color=c, rotate=0]{Philox};
+\definecolor{c}{rgb}{1,1,1};
+\draw [c] (12.9528,7.91431) -- (13.8365,7.91431) -- (13.8365,8.36799) -- (12.9528,8.36799);
+\definecolor{c}{rgb}{1,0,1};
+\draw [c,dash pattern=on 2.40pt off 2.40pt ,line width=2.7] (12.9528,8.14115) -- (13.8365,8.14115);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.3946,8.14115)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [anchor=base west] (14.0258,7.34722) node[scale=1.14802, color=c, rotate=0]{Threefry};
+\definecolor{c}{rgb}{1,1,1};
+\draw [c] (12.9528,7.2662) -- (13.8365,7.2662) -- (13.8365,7.71988) -- (12.9528,7.71988);
+\definecolor{c}{rgb}{0,0,0};
+\draw [c,dash pattern=on 4.00pt off 2.40pt on 0.80pt off 2.40pt ,line width=2.7] (12.9528,7.49304) -- (13.8365,7.49304);
+\foreach \P in {(13.3946,7.49304)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\draw [anchor=base west] (14.0258,6.69911) node[scale=1.14802, color=c, rotate=0]{Ranecu};
+\definecolor{c}{rgb}{1,1,1};
+\draw [c] (12.9528,6.61809) -- (13.8365,6.61809) -- (13.8365,7.07177) -- (12.9528,7.07177);
+\definecolor{c}{rgb}{0.87,0.73,0.53};
+\draw [c,dash pattern=on 16.00pt off 8.00pt on 0.80pt off 8.00pt ,line width=2.7] (12.9528,6.84493) -- (13.8365,6.84493);
+\definecolor{c}{rgb}{0,0,0};
+\foreach \P in {(13.3946,6.84493)}{\draw[mark options={color=c,fill=c},mark size=2.402402pt,mark=*,mark size=1pt] plot coordinates {\P};}
+\end{tikzpicture}
