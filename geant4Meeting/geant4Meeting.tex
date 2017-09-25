@@ -19,7 +19,6 @@ supervised by John Apostolakis and Sandro Wenzel}
  \begin{frame}{Motivation}
  \large
   \begin{itemize}
-   \item Geant4 is a toolkit for the Monte Carlo simulation of the passage of particles through matter
    \item Monte Carlo simulation relies on pseudo-random numbers
    \item The numbers must seem uncorrelated
    \item Reproducibility from any point of simulation is needed
@@ -42,7 +41,7 @@ supervised by John Apostolakis and Sandro Wenzel}
      \item A big number of tracks is needed to reduce overhead
      \item Number of tracks, baskets and threads change during the simulation
     \end{itemize}
-   $\Rightarrow$ a new mechanism is needed for reproducibility
+   $\Rightarrow$ the generator state must be associated with the track
   \end{itemize}
 
  \end{frame}
@@ -109,12 +108,14 @@ supervised by John Apostolakis and Sandro Wenzel}
  \begin{frame}{Acknowledgements}
 
   \centering
-  I would like to thank my mentors\\
+  I would like to thank\\
   John Apostolakis and Sandro Wenzel\\
   for productive collaboration. 
 
  \end{frame}
  
+ 
+ \appendix
  
  \end{large}
 \end{document}
